@@ -1,18 +1,25 @@
 // Code your design here
 module fft_n4(
-	input logic [1:0]x [3:0],
-	output logic [3:0]Xr [3:0],
-	output logic [3:0]Xi [3:0]);
+	input [3:0]A,
+	input [3:0]B,
+	input [3:0]C,
+	input [3:0]D,
+	output [3:0]Xr0,
+	output [3:0]Xr1,
+	output [3:0]Xr2,
+	output [3:0]Xr3,
+	output [3:0]Xi0,
+	output [3:0]Xi1,
+	output [3:0]Xi2,
+	output [3:0]Xi3);
 
-always @(x[0],x[1],x[2],x[3])
-begin
-	 Xr[0] <= x[0]+x[1]+x[2]+x[3];
-	Xi[0] <= 4'b0000;
-	Xr[1] <= x[0]-x[2];
-  	Xi[1] <= x[3]-x[1];
-	Xr[2] <= x[0]-x[1]+x[2]-x[3];
-	Xi[2] <= 4'b0000;
-	Xr[3] <= x[0]-x[2];
-  	Xi[3] <= x[1]-x[3];
-end
+assign Xr0 = A+B+C+D;
+assign Xi0 = 4'b0000;
+assign Xr1 = A-C;
+assign Xi1 = D-B;
+assign Xr2 = A-B+C-D;
+assign Xi2 = 4'b0000;
+assign Xr3 = A-C;
+assign Xi3 = B-D;
+
 endmodule
