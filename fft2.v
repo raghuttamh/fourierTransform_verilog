@@ -1,12 +1,12 @@
 module fft2(
-	input [7:0]xr,
-	input [7:0]xi,
-	input [7:0]yr,
-	input [7:0]yi,
-	output [7:0]Xr,
-	output [7:0]Xi,
-	output [7:0]Yr,
-	output [7:0]Yi);
+	input [31:0]xr,
+	input [31:0]xi,
+	input [31:0]yr,
+	input [31:0]yi,
+	output [31:0]Xr,
+	output [31:0]Xi,
+	output [31:0]Yr,
+	output [31:0]Yi);
 
 assign Xr = xr + yr;
 assign Yr = xr - yr;
