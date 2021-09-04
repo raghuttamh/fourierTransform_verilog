@@ -7,411 +7,510 @@
 :vpi_module "/usr/lib/ivl/vhdl_textio.vpi";
 :vpi_module "/usr/lib/ivl/v2005_math.vpi";
 :vpi_module "/usr/lib/ivl/va_math.vpi";
-S_0x563f0de36620 .scope module, "fft4_test" "fft4_test" 2 1;
+S_0x55ac50dc2b40 .scope module, "fft4_test" "fft4_test" 2 1;
  .timescale 0 0;
-v0x563f0de6bbe0_0 .var "A0", 7 0;
-v0x563f0de6bd10_0 .var "A1", 7 0;
-v0x563f0de6be20_0 .var "A2", 7 0;
-v0x563f0de6bf10_0 .var "A3", 7 0;
-v0x563f0de6c020_0 .var "A4", 7 0;
-v0x563f0de6c180_0 .var "A5", 7 0;
-v0x563f0de6c290_0 .var "A6", 7 0;
-v0x563f0de6c3a0_0 .var "A7", 7 0;
-v0x563f0de6c4b0_0 .net "Xi0", 7 0, L_0x563f0de702f0;  1 drivers
-v0x563f0de6c570_0 .net "Xi1", 7 0, L_0x563f0de707b0;  1 drivers
-v0x563f0de6c680_0 .net "Xi2", 7 0, L_0x563f0de70c70;  1 drivers
-v0x563f0de6c790_0 .net "Xi3", 7 0, L_0x563f0de71130;  1 drivers
-v0x563f0de6c8a0_0 .net "Xi4", 7 0, L_0x563f0de704b0;  1 drivers
-v0x563f0de6c9b0_0 .net "Xi5", 7 0, L_0x563f0de70970;  1 drivers
-v0x563f0de6cac0_0 .net "Xi6", 7 0, L_0x563f0de70e30;  1 drivers
-v0x563f0de6cbd0_0 .net "Xi7", 7 0, L_0x563f0de712f0;  1 drivers
-v0x563f0de6cce0_0 .net "Xr0", 7 0, L_0x563f0de70090;  1 drivers
-v0x563f0de6cdf0_0 .net "Xr1", 7 0, L_0x563f0de70550;  1 drivers
-v0x563f0de6cf00_0 .net "Xr2", 7 0, L_0x563f0de70a10;  1 drivers
-v0x563f0de6d010_0 .net "Xr3", 7 0, L_0x563f0de70ed0;  1 drivers
-v0x563f0de6d120_0 .net "Xr4", 7 0, L_0x563f0de70250;  1 drivers
-v0x563f0de6d230_0 .net "Xr5", 7 0, L_0x563f0de70710;  1 drivers
-v0x563f0de6d340_0 .net "Xr6", 7 0, L_0x563f0de70bd0;  1 drivers
-v0x563f0de6d450_0 .net "Xr7", 7 0, L_0x563f0de71090;  1 drivers
-S_0x563f0de38220 .scope module, "f" "fft8" 2 28, 3 1 0, S_0x563f0de36620;
+v0x55ac50e44e90_0 .var "A0", 31 0;
+v0x55ac50e44fc0_0 .var "A1", 31 0;
+v0x55ac50e450d0_0 .var "A2", 31 0;
+v0x55ac50e451c0_0 .var "A3", 31 0;
+v0x55ac50e452d0_0 .var "A4", 31 0;
+v0x55ac50e45430_0 .var "A5", 31 0;
+v0x55ac50e45540_0 .var "A6", 31 0;
+v0x55ac50e45650_0 .var "A7", 31 0;
+v0x55ac50e45760_0 .net "Xi0", 31 0, L_0x55ac50e5ae50;  1 drivers
+v0x55ac50e45820_0 .net "Xi1", 31 0, L_0x55ac50e5b030;  1 drivers
+v0x55ac50e458c0_0 .net "Xi2", 31 0, L_0x55ac50e5b210;  1 drivers
+v0x55ac50e45960_0 .net "Xi3", 31 0, L_0x55ac50e5b430;  1 drivers
+v0x55ac50e45a00_0 .net "Xi4", 31 0, L_0x55ac50e5b780;  1 drivers
+v0x55ac50e45aa0_0 .net "Xi5", 31 0, L_0x55ac50e5bb60;  1 drivers
+v0x55ac50e45b40_0 .net "Xi6", 31 0, L_0x55ac50e5bf50;  1 drivers
+v0x55ac50e45be0_0 .net "Xi7", 31 0, L_0x55ac50e5c350;  1 drivers
+v0x55ac50e45c80_0 .net "Xr0", 31 0, L_0x55ac50e5ad60;  1 drivers
+v0x55ac50e45d20_0 .net "Xr1", 31 0, L_0x55ac50e5af40;  1 drivers
+v0x55ac50e45df0_0 .net "Xr2", 31 0, L_0x55ac50e5b120;  1 drivers
+v0x55ac50e45ec0_0 .net "Xr3", 31 0, L_0x55ac50e5b340;  1 drivers
+v0x55ac50e45f90_0 .net "Xr4", 31 0, L_0x55ac50e5b570;  1 drivers
+v0x55ac50e46060_0 .net "Xr5", 31 0, L_0x55ac50e5b9a0;  1 drivers
+v0x55ac50e46130_0 .net "Xr6", 31 0, L_0x55ac50e5bd90;  1 drivers
+v0x55ac50e46200_0 .net "Xr7", 31 0, L_0x55ac50e5c190;  1 drivers
+S_0x55ac50dc1e80 .scope module, "f" "fft8" 2 28, 3 1 0, S_0x55ac50dc2b40;
  .timescale 0 0;
-    .port_info 0 /INPUT 8 "A0";
-    .port_info 1 /INPUT 8 "A1";
-    .port_info 2 /INPUT 8 "A2";
-    .port_info 3 /INPUT 8 "A3";
-    .port_info 4 /INPUT 8 "A4";
-    .port_info 5 /INPUT 8 "A5";
-    .port_info 6 /INPUT 8 "A6";
-    .port_info 7 /INPUT 8 "A7";
-    .port_info 8 /OUTPUT 8 "Xr0";
-    .port_info 9 /OUTPUT 8 "Xr1";
-    .port_info 10 /OUTPUT 8 "Xr2";
-    .port_info 11 /OUTPUT 8 "Xr3";
-    .port_info 12 /OUTPUT 8 "Xi0";
-    .port_info 13 /OUTPUT 8 "Xi1";
-    .port_info 14 /OUTPUT 8 "Xi2";
-    .port_info 15 /OUTPUT 8 "Xi3";
-    .port_info 16 /OUTPUT 8 "Xr4";
-    .port_info 17 /OUTPUT 8 "Xr5";
-    .port_info 18 /OUTPUT 8 "Xr6";
-    .port_info 19 /OUTPUT 8 "Xr7";
-    .port_info 20 /OUTPUT 8 "Xi4";
-    .port_info 21 /OUTPUT 8 "Xi5";
-    .port_info 22 /OUTPUT 8 "Xi6";
-    .port_info 23 /OUTPUT 8 "Xi7";
-v0x563f0de68ae0_0 .net "A0", 7 0, v0x563f0de6bbe0_0;  1 drivers
-v0x563f0de68bf0_0 .net "A1", 7 0, v0x563f0de6bd10_0;  1 drivers
-v0x563f0de68cc0_0 .net "A2", 7 0, v0x563f0de6be20_0;  1 drivers
-v0x563f0de68dc0_0 .net "A3", 7 0, v0x563f0de6bf10_0;  1 drivers
-v0x563f0de68e90_0 .net "A4", 7 0, v0x563f0de6c020_0;  1 drivers
-v0x563f0de68f30_0 .net "A5", 7 0, v0x563f0de6c180_0;  1 drivers
-v0x563f0de69000_0 .net "A6", 7 0, v0x563f0de6c290_0;  1 drivers
-v0x563f0de690d0_0 .net "A7", 7 0, v0x563f0de6c3a0_0;  1 drivers
-L_0x7f27bf5ec0a8 .functor BUFT 1, C4<00000000>, C4<0>, C4<0>, C4<0>;
-v0x563f0de691a0_0 .net "Li4", 7 0, L_0x7f27bf5ec0a8;  1 drivers
-v0x563f0de692d0_0 .net "Li5", 7 0, L_0x563f0de6e280;  1 drivers
-L_0x7f27bf5ec0f0 .functor BUFT 1, C4<00000000>, C4<0>, C4<0>, C4<0>;
-v0x563f0de693c0_0 .net "Li6", 7 0, L_0x7f27bf5ec0f0;  1 drivers
-v0x563f0de694d0_0 .net "Li7", 7 0, L_0x563f0de6e750;  1 drivers
-v0x563f0de695e0_0 .net "Lr4", 7 0, L_0x563f0de6e020;  1 drivers
-v0x563f0de696f0_0 .net "Lr5", 7 0, L_0x563f0de6e0c0;  1 drivers
-v0x563f0de69800_0 .net "Lr6", 7 0, L_0x563f0de6e5c0;  1 drivers
-v0x563f0de69910_0 .net "Lr7", 7 0, L_0x563f0de6e6b0;  1 drivers
-v0x563f0de69a20_0 .net "Xi0", 7 0, L_0x563f0de702f0;  alias, 1 drivers
-L_0x7f27bf5ec018 .functor BUFT 1, C4<00000000>, C4<0>, C4<0>, C4<0>;
-v0x563f0de69ae0_0 .net "Xi0_", 7 0, L_0x7f27bf5ec018;  1 drivers
-v0x563f0de69bd0_0 .net "Xi1", 7 0, L_0x563f0de707b0;  alias, 1 drivers
-v0x563f0de69c90_0 .net "Xi1_", 7 0, L_0x563f0de6d910;  1 drivers
-v0x563f0de69d80_0 .net "Xi2", 7 0, L_0x563f0de70c70;  alias, 1 drivers
-L_0x7f27bf5ec060 .functor BUFT 1, C4<00000000>, C4<0>, C4<0>, C4<0>;
-v0x563f0de69e40_0 .net "Xi2_", 7 0, L_0x7f27bf5ec060;  1 drivers
-v0x563f0de69f30_0 .net "Xi3", 7 0, L_0x563f0de71130;  alias, 1 drivers
-v0x563f0de69ff0_0 .net "Xi3_", 7 0, L_0x563f0de6dde0;  1 drivers
-v0x563f0de6a0e0_0 .net "Xi4", 7 0, L_0x563f0de704b0;  alias, 1 drivers
-v0x563f0de6a1a0_0 .net "Xi4_", 7 0, L_0x563f0de6ec90;  1 drivers
-v0x563f0de6a290_0 .net "Xi5", 7 0, L_0x563f0de70970;  alias, 1 drivers
-v0x563f0de6a350_0 .net "Xi5_", 7 0, L_0x563f0de6f250;  1 drivers
-v0x563f0de6a440_0 .net "Xi6", 7 0, L_0x563f0de70e30;  alias, 1 drivers
-v0x563f0de6a500_0 .net "Xi6_", 7 0, L_0x563f0de6f8b0;  1 drivers
-v0x563f0de6a5f0_0 .net "Xi7", 7 0, L_0x563f0de712f0;  alias, 1 drivers
-v0x563f0de6a6b0_0 .net "Xi7_", 7 0, L_0x563f0de6ff10;  1 drivers
-v0x563f0de6a7a0_0 .net "Xr0", 7 0, L_0x563f0de70090;  alias, 1 drivers
-v0x563f0de6aa70_0 .net "Xr0_", 7 0, L_0x563f0de6d6f0;  1 drivers
-v0x563f0de6ab60_0 .net "Xr1", 7 0, L_0x563f0de70550;  alias, 1 drivers
-v0x563f0de6ac20_0 .net "Xr1_", 7 0, L_0x563f0de6d7e0;  1 drivers
-v0x563f0de6ad10_0 .net "Xr2", 7 0, L_0x563f0de70a10;  alias, 1 drivers
-v0x563f0de6add0_0 .net "Xr2_", 7 0, L_0x563f0de6dc50;  1 drivers
-v0x563f0de6aec0_0 .net "Xr3", 7 0, L_0x563f0de70ed0;  alias, 1 drivers
-v0x563f0de6af80_0 .net "Xr3_", 7 0, L_0x563f0de6dd40;  1 drivers
-v0x563f0de6b070_0 .net "Xr4", 7 0, L_0x563f0de70250;  alias, 1 drivers
-v0x563f0de6b130_0 .net "Xr4_", 7 0, L_0x563f0de6eab0;  1 drivers
-v0x563f0de6b220_0 .net "Xr5", 7 0, L_0x563f0de70710;  alias, 1 drivers
-v0x563f0de6b2e0_0 .net "Xr5_", 7 0, L_0x563f0de6efd0;  1 drivers
-v0x563f0de6b3d0_0 .net "Xr6", 7 0, L_0x563f0de70bd0;  alias, 1 drivers
-v0x563f0de6b490_0 .net "Xr6_", 7 0, L_0x563f0de6f630;  1 drivers
-v0x563f0de6b580_0 .net "Xr7", 7 0, L_0x563f0de71090;  alias, 1 drivers
-v0x563f0de6b640_0 .net "Xr7_", 7 0, L_0x563f0de6fc90;  1 drivers
-v0x563f0de6b730 .array "cos", 3 0, 7 0;
-v0x563f0de6b7f0 .array "sin", 3 0, 7 0;
-S_0x563f0de29220 .scope module, "m4" "complex_mul" 3 41, 4 1 0, S_0x563f0de38220;
+    .port_info 0 /INPUT 32 "A0";
+    .port_info 1 /INPUT 32 "A1";
+    .port_info 2 /INPUT 32 "A2";
+    .port_info 3 /INPUT 32 "A3";
+    .port_info 4 /INPUT 32 "A4";
+    .port_info 5 /INPUT 32 "A5";
+    .port_info 6 /INPUT 32 "A6";
+    .port_info 7 /INPUT 32 "A7";
+    .port_info 8 /OUTPUT 32 "Xr0";
+    .port_info 9 /OUTPUT 32 "Xr1";
+    .port_info 10 /OUTPUT 32 "Xr2";
+    .port_info 11 /OUTPUT 32 "Xr3";
+    .port_info 12 /OUTPUT 32 "Xi0";
+    .port_info 13 /OUTPUT 32 "Xi1";
+    .port_info 14 /OUTPUT 32 "Xi2";
+    .port_info 15 /OUTPUT 32 "Xi3";
+    .port_info 16 /OUTPUT 32 "Xr4";
+    .port_info 17 /OUTPUT 32 "Xr5";
+    .port_info 18 /OUTPUT 32 "Xr6";
+    .port_info 19 /OUTPUT 32 "Xr7";
+    .port_info 20 /OUTPUT 32 "Xi4";
+    .port_info 21 /OUTPUT 32 "Xi5";
+    .port_info 22 /OUTPUT 32 "Xi6";
+    .port_info 23 /OUTPUT 32 "Xi7";
+v0x55ac50e40770_0 .net "A0", 31 0, v0x55ac50e44e90_0;  1 drivers
+v0x55ac50e40850_0 .net "A1", 31 0, v0x55ac50e44fc0_0;  1 drivers
+v0x55ac50e40920_0 .net "A2", 31 0, v0x55ac50e450d0_0;  1 drivers
+v0x55ac50e40a20_0 .net "A3", 31 0, v0x55ac50e451c0_0;  1 drivers
+v0x55ac50e40af0_0 .net "A4", 31 0, v0x55ac50e452d0_0;  1 drivers
+v0x55ac50e40b90_0 .net "A5", 31 0, v0x55ac50e45430_0;  1 drivers
+v0x55ac50e40c60_0 .net "A6", 31 0, v0x55ac50e45540_0;  1 drivers
+v0x55ac50e40d30_0 .net "A7", 31 0, v0x55ac50e45650_0;  1 drivers
+v0x55ac50e40e00_0 .net "Ki6", 31 0, L_0x55ac50e56990;  1 drivers
+v0x55ac50e40f30_0 .net "Ki7", 31 0, L_0x55ac50e57160;  1 drivers
+v0x55ac50e41020_0 .net "Kr6", 31 0, L_0x55ac50e56700;  1 drivers
+v0x55ac50e41130_0 .net "Kr7", 31 0, L_0x55ac50e56f00;  1 drivers
+v0x55ac50e41240_0 .net "Li1", 31 0, L_0x55ac50e58da0;  1 drivers
+v0x55ac50e41350_0 .net "Li3", 31 0, L_0x55ac50e58f60;  1 drivers
+v0x55ac50e41460_0 .net "Li5", 31 0, L_0x55ac50e592a0;  1 drivers
+v0x55ac50e41570_0 .net "Li7", 31 0, L_0x55ac50e59340;  1 drivers
+v0x55ac50e41680_0 .net "Lr1", 31 0, L_0x55ac50e58a20;  1 drivers
+v0x55ac50e41790_0 .net "Lr3", 31 0, L_0x55ac50e58be0;  1 drivers
+v0x55ac50e418a0_0 .net "Lr5", 31 0, L_0x55ac50e59120;  1 drivers
+v0x55ac50e419b0_0 .net "Lr7", 31 0, L_0x55ac50e591c0;  1 drivers
+v0x55ac50e41ac0_0 .net "Ti0", 31 0, L_0x55ac50e58390;  1 drivers
+v0x55ac50e41b80_0 .net "Ti1", 31 0, L_0x55ac50e59820;  1 drivers
+v0x55ac50e41c20_0 .net "Ti2", 31 0, L_0x55ac50e58550;  1 drivers
+v0x55ac50e41cc0_0 .net "Ti3", 31 0, L_0x55ac50e5a490;  1 drivers
+v0x55ac50e41d60_0 .net "Ti4", 31 0, L_0x55ac50e58890;  1 drivers
+v0x55ac50e41e00_0 .net "Ti5", 31 0, L_0x55ac50e59d90;  1 drivers
+v0x55ac50e41ea0_0 .net "Ti6", 31 0, L_0x55ac50e58930;  1 drivers
+v0x55ac50e41f40_0 .net "Ti7", 31 0, L_0x55ac50e5ab90;  1 drivers
+v0x55ac50e41fe0_0 .net "Tr0", 31 0, L_0x55ac50e57fc0;  1 drivers
+v0x55ac50e42080_0 .net "Tr1", 31 0, L_0x55ac50e59640;  1 drivers
+v0x55ac50e42120_0 .net "Tr2", 31 0, L_0x55ac50e581d0;  1 drivers
+v0x55ac50e421c0_0 .net "Tr3", 31 0, L_0x55ac50e5a1c0;  1 drivers
+v0x55ac50e42260_0 .net "Tr4", 31 0, L_0x55ac50e58710;  1 drivers
+v0x55ac50e42540_0 .net "Tr5", 31 0, L_0x55ac50e59b60;  1 drivers
+v0x55ac50e42610_0 .net "Tr6", 31 0, L_0x55ac50e587b0;  1 drivers
+v0x55ac50e426e0_0 .net "Tr7", 31 0, L_0x55ac50e5a8c0;  1 drivers
+v0x55ac50e427b0_0 .net "Xi0", 31 0, L_0x55ac50e5ae50;  alias, 1 drivers
+v0x55ac50e42870_0 .net "Xi0_", 31 0, L_0x55ac50e464b0;  1 drivers
+v0x55ac50e42980_0 .net "Xi1", 31 0, L_0x55ac50e5b030;  alias, 1 drivers
+v0x55ac50e42a60_0 .net "Xi1_", 31 0, L_0x55ac50e56cc0;  1 drivers
+v0x55ac50e42b70_0 .net "Xi2", 31 0, L_0x55ac50e5b210;  alias, 1 drivers
+v0x55ac50e42c50_0 .net "Xi2_", 31 0, L_0x55ac50e568c0;  1 drivers
+v0x55ac50e42d60_0 .net "Xi3", 31 0, L_0x55ac50e5b430;  alias, 1 drivers
+v0x55ac50e42e40_0 .net "Xi3_", 31 0, L_0x55ac50e570c0;  1 drivers
+v0x55ac50e42f50_0 .net "Xi4", 31 0, L_0x55ac50e5b780;  alias, 1 drivers
+v0x55ac50e43030_0 .net "Xi4_", 31 0, L_0x55ac50e46580;  1 drivers
+v0x55ac50e43140_0 .net "Xi5", 31 0, L_0x55ac50e5bb60;  alias, 1 drivers
+v0x55ac50e43220_0 .net "Xi5_", 31 0, L_0x55ac50e56d90;  1 drivers
+v0x55ac50e43330_0 .net "Xi6", 31 0, L_0x55ac50e5bf50;  alias, 1 drivers
+v0x55ac50e43410_0 .net "Xi6_", 31 0, L_0x55ac50e57770;  1 drivers
+v0x55ac50e43520_0 .net "Xi7", 31 0, L_0x55ac50e5c350;  alias, 1 drivers
+v0x55ac50e43600_0 .net "Xi7_", 31 0, L_0x55ac50e57e40;  1 drivers
+v0x55ac50e43710_0 .net "Xr0", 31 0, L_0x55ac50e5ad60;  alias, 1 drivers
+v0x55ac50e437f0_0 .net "Xr0_", 31 0, L_0x55ac50e462c0;  1 drivers
+v0x55ac50e43900_0 .net "Xr1", 31 0, L_0x55ac50e5af40;  alias, 1 drivers
+v0x55ac50e439e0_0 .net "Xr1_", 31 0, L_0x55ac50e56a60;  1 drivers
+v0x55ac50e43af0_0 .net "Xr2", 31 0, L_0x55ac50e5b120;  alias, 1 drivers
+v0x55ac50e43bd0_0 .net "Xr2_", 31 0, L_0x55ac50e56660;  1 drivers
+v0x55ac50e43ce0_0 .net "Xr3", 31 0, L_0x55ac50e5b340;  alias, 1 drivers
+v0x55ac50e43dc0_0 .net "Xr3_", 31 0, L_0x55ac50e56e60;  1 drivers
+v0x55ac50e43ed0_0 .net "Xr4", 31 0, L_0x55ac50e5b570;  alias, 1 drivers
+v0x55ac50e43fb0_0 .net "Xr4_", 31 0, L_0x55ac50e46380;  1 drivers
+v0x55ac50e440c0_0 .net "Xr5", 31 0, L_0x55ac50e5b9a0;  alias, 1 drivers
+v0x55ac50e441a0_0 .net "Xr5_", 31 0, L_0x55ac50e56b00;  1 drivers
+v0x55ac50e442b0_0 .net "Xr6", 31 0, L_0x55ac50e5bd90;  alias, 1 drivers
+v0x55ac50e44760_0 .net "Xr6_", 31 0, L_0x55ac50e574c0;  1 drivers
+v0x55ac50e44850_0 .net "Xr7", 31 0, L_0x55ac50e5c190;  alias, 1 drivers
+v0x55ac50e448f0_0 .net "Xr7_", 31 0, L_0x55ac50e57be0;  1 drivers
+v0x55ac50e449e0 .array "cos", 3 0, 31 0;
+v0x55ac50e44aa0 .array "sin", 3 0, 31 0;
+L_0x55ac50e5ad60 .arith/sum 32, L_0x55ac50e57fc0, L_0x55ac50e59640;
+L_0x55ac50e5ae50 .arith/sum 32, L_0x55ac50e58390, L_0x55ac50e59820;
+L_0x55ac50e5af40 .arith/sum 32, L_0x55ac50e58710, L_0x55ac50e59b60;
+L_0x55ac50e5b030 .arith/sum 32, L_0x55ac50e58890, L_0x55ac50e59d90;
+L_0x55ac50e5b120 .arith/sum 32, L_0x55ac50e581d0, L_0x55ac50e5a1c0;
+L_0x55ac50e5b210 .arith/sum 32, L_0x55ac50e58550, L_0x55ac50e5a490;
+L_0x55ac50e5b340 .arith/sum 32, L_0x55ac50e587b0, L_0x55ac50e5a8c0;
+L_0x55ac50e5b430 .arith/sum 32, L_0x55ac50e58930, L_0x55ac50e5ab90;
+L_0x55ac50e5b570 .arith/sub 32, L_0x55ac50e57fc0, L_0x55ac50e59640;
+L_0x55ac50e5b780 .arith/sub 32, L_0x55ac50e58390, L_0x55ac50e59820;
+L_0x55ac50e5b9a0 .arith/sub 32, L_0x55ac50e58710, L_0x55ac50e59b60;
+L_0x55ac50e5bb60 .arith/sub 32, L_0x55ac50e58890, L_0x55ac50e59d90;
+L_0x55ac50e5bd90 .arith/sub 32, L_0x55ac50e581d0, L_0x55ac50e5a1c0;
+L_0x55ac50e5bf50 .arith/sub 32, L_0x55ac50e58550, L_0x55ac50e5a490;
+L_0x55ac50e5c190 .arith/sub 32, L_0x55ac50e587b0, L_0x55ac50e5a8c0;
+L_0x55ac50e5c350 .arith/sub 32, L_0x55ac50e58930, L_0x55ac50e5ab90;
+S_0x55ac50df46b0 .scope module, "m4" "complex_mul" 3 56, 4 1 0, S_0x55ac50dc1e80;
  .timescale 0 0;
-    .port_info 0 /INPUT 8 "Xr";
-    .port_info 1 /INPUT 8 "Xi";
-    .port_info 2 /INPUT 8 "Yr";
-    .port_info 3 /INPUT 8 "Yi";
-    .port_info 4 /OUTPUT 8 "Pr";
-    .port_info 5 /OUTPUT 8 "Pi";
-v0x563f0de41f60_0 .net "Pi", 7 0, L_0x563f0de6ec90;  alias, 1 drivers
-v0x563f0de60d60_0 .net "Pr", 7 0, L_0x563f0de6eab0;  alias, 1 drivers
-v0x563f0de60e40_0 .net "Xi", 7 0, L_0x7f27bf5ec0a8;  alias, 1 drivers
-v0x563f0de60f00_0 .net "Xr", 7 0, L_0x563f0de6e020;  alias, 1 drivers
-v0x563f0de6b7f0_0 .array/port v0x563f0de6b7f0, 0;
-v0x563f0de60fe0_0 .net "Yi", 7 0, v0x563f0de6b7f0_0;  1 drivers
-v0x563f0de6b730_0 .array/port v0x563f0de6b730, 0;
-v0x563f0de61110_0 .net "Yr", 7 0, v0x563f0de6b730_0;  1 drivers
-v0x563f0de611f0_0 .net *"_ivl_1", 7 0, L_0x563f0de6e850;  1 drivers
-v0x563f0de612d0_0 .net *"_ivl_3", 7 0, L_0x563f0de6e980;  1 drivers
-v0x563f0de613b0_0 .net *"_ivl_7", 7 0, L_0x563f0de6eb50;  1 drivers
-v0x563f0de61490_0 .net *"_ivl_9", 7 0, L_0x563f0de6ebf0;  1 drivers
-L_0x563f0de6e850 .arith/mult 8, L_0x563f0de6e020, v0x563f0de6b730_0;
-L_0x563f0de6e980 .arith/mult 8, L_0x7f27bf5ec0a8, v0x563f0de6b7f0_0;
-L_0x563f0de6eab0 .arith/sub 8, L_0x563f0de6e850, L_0x563f0de6e980;
-L_0x563f0de6eb50 .arith/mult 8, L_0x563f0de6e020, v0x563f0de6b7f0_0;
-L_0x563f0de6ebf0 .arith/mult 8, L_0x7f27bf5ec0a8, v0x563f0de6b730_0;
-L_0x563f0de6ec90 .arith/sum 8, L_0x563f0de6eb50, L_0x563f0de6ebf0;
-S_0x563f0de61630 .scope module, "m5" "complex_mul" 3 42, 4 1 0, S_0x563f0de38220;
+    .port_info 0 /INPUT 32 "Xr";
+    .port_info 1 /INPUT 32 "Xi";
+    .port_info 2 /INPUT 32 "Yr";
+    .port_info 3 /INPUT 32 "Yi";
+    .port_info 4 /OUTPUT 32 "Pr";
+    .port_info 5 /OUTPUT 32 "Pi";
+v0x55ac50e0d0e0_0 .net "Pi", 31 0, L_0x55ac50e59820;  alias, 1 drivers
+v0x55ac50e36e20_0 .net "Pr", 31 0, L_0x55ac50e59640;  alias, 1 drivers
+v0x55ac50e36f00_0 .net "Xi", 31 0, L_0x55ac50e58da0;  alias, 1 drivers
+v0x55ac50e36fc0_0 .net "Xr", 31 0, L_0x55ac50e58a20;  alias, 1 drivers
+L_0x7f34492a23c0 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0x55ac50e370a0_0 .net "Yi", 31 0, L_0x7f34492a23c0;  1 drivers
+L_0x7f34492a2378 .functor BUFT 1, C4<00000000000000000000000000000001>, C4<0>, C4<0>, C4<0>;
+v0x55ac50e371d0_0 .net "Yr", 31 0, L_0x7f34492a2378;  1 drivers
+v0x55ac50e372b0_0 .net *"_ivl_1", 31 0, L_0x55ac50e593e0;  1 drivers
+v0x55ac50e37390_0 .net *"_ivl_3", 31 0, L_0x55ac50e59510;  1 drivers
+v0x55ac50e37470_0 .net *"_ivl_7", 31 0, L_0x55ac50e596e0;  1 drivers
+v0x55ac50e37550_0 .net *"_ivl_9", 31 0, L_0x55ac50e59780;  1 drivers
+L_0x55ac50e593e0 .arith/mult 32, L_0x55ac50e58a20, L_0x7f34492a2378;
+L_0x55ac50e59510 .arith/mult 32, L_0x55ac50e58da0, L_0x7f34492a23c0;
+L_0x55ac50e59640 .arith/sub 32, L_0x55ac50e593e0, L_0x55ac50e59510;
+L_0x55ac50e596e0 .arith/mult 32, L_0x55ac50e58a20, L_0x7f34492a23c0;
+L_0x55ac50e59780 .arith/mult 32, L_0x55ac50e58da0, L_0x7f34492a2378;
+L_0x55ac50e59820 .arith/sum 32, L_0x55ac50e596e0, L_0x55ac50e59780;
+S_0x55ac50e376f0 .scope module, "m5" "complex_mul" 3 57, 4 1 0, S_0x55ac50dc1e80;
  .timescale 0 0;
-    .port_info 0 /INPUT 8 "Xr";
-    .port_info 1 /INPUT 8 "Xi";
-    .port_info 2 /INPUT 8 "Yr";
-    .port_info 3 /INPUT 8 "Yi";
-    .port_info 4 /OUTPUT 8 "Pr";
-    .port_info 5 /OUTPUT 8 "Pi";
-v0x563f0de61880_0 .net "Pi", 7 0, L_0x563f0de6f250;  alias, 1 drivers
-v0x563f0de61960_0 .net "Pr", 7 0, L_0x563f0de6efd0;  alias, 1 drivers
-v0x563f0de61a40_0 .net "Xi", 7 0, L_0x563f0de6e280;  alias, 1 drivers
-v0x563f0de61b00_0 .net "Xr", 7 0, L_0x563f0de6e0c0;  alias, 1 drivers
-v0x563f0de6b7f0_1 .array/port v0x563f0de6b7f0, 1;
-v0x563f0de61be0_0 .net "Yi", 7 0, v0x563f0de6b7f0_1;  1 drivers
-v0x563f0de6b730_1 .array/port v0x563f0de6b730, 1;
-v0x563f0de61d10_0 .net "Yr", 7 0, v0x563f0de6b730_1;  1 drivers
-v0x563f0de61df0_0 .net *"_ivl_1", 7 0, L_0x563f0de6ed70;  1 drivers
-v0x563f0de61ed0_0 .net *"_ivl_3", 7 0, L_0x563f0de6eea0;  1 drivers
-v0x563f0de61fb0_0 .net *"_ivl_7", 7 0, L_0x563f0de6f110;  1 drivers
-v0x563f0de62090_0 .net *"_ivl_9", 7 0, L_0x563f0de6f1b0;  1 drivers
-L_0x563f0de6ed70 .arith/mult 8, L_0x563f0de6e0c0, v0x563f0de6b730_1;
-L_0x563f0de6eea0 .arith/mult 8, L_0x563f0de6e280, v0x563f0de6b7f0_1;
-L_0x563f0de6efd0 .arith/sub 8, L_0x563f0de6ed70, L_0x563f0de6eea0;
-L_0x563f0de6f110 .arith/mult 8, L_0x563f0de6e0c0, v0x563f0de6b7f0_1;
-L_0x563f0de6f1b0 .arith/mult 8, L_0x563f0de6e280, v0x563f0de6b730_1;
-L_0x563f0de6f250 .arith/sum 8, L_0x563f0de6f110, L_0x563f0de6f1b0;
-S_0x563f0de62230 .scope module, "m6" "complex_mul" 3 43, 4 1 0, S_0x563f0de38220;
+    .port_info 0 /INPUT 32 "Xr";
+    .port_info 1 /INPUT 32 "Xi";
+    .port_info 2 /INPUT 32 "Yr";
+    .port_info 3 /INPUT 32 "Yi";
+    .port_info 4 /OUTPUT 32 "Pr";
+    .port_info 5 /OUTPUT 32 "Pi";
+v0x55ac50e37940_0 .net "Pi", 31 0, L_0x55ac50e59d90;  alias, 1 drivers
+v0x55ac50e37a20_0 .net "Pr", 31 0, L_0x55ac50e59b60;  alias, 1 drivers
+v0x55ac50e37b00_0 .net "Xi", 31 0, L_0x55ac50e592a0;  alias, 1 drivers
+v0x55ac50e37bc0_0 .net "Xr", 31 0, L_0x55ac50e59120;  alias, 1 drivers
+v0x55ac50e44aa0_1 .array/port v0x55ac50e44aa0, 1;
+v0x55ac50e37ca0_0 .net "Yi", 31 0, v0x55ac50e44aa0_1;  1 drivers
+v0x55ac50e449e0_1 .array/port v0x55ac50e449e0, 1;
+v0x55ac50e37dd0_0 .net "Yr", 31 0, v0x55ac50e449e0_1;  1 drivers
+v0x55ac50e37eb0_0 .net *"_ivl_1", 31 0, L_0x55ac50e59900;  1 drivers
+v0x55ac50e37f90_0 .net *"_ivl_3", 31 0, L_0x55ac50e59a30;  1 drivers
+v0x55ac50e38070_0 .net *"_ivl_7", 31 0, L_0x55ac50e59c50;  1 drivers
+v0x55ac50e38150_0 .net *"_ivl_9", 31 0, L_0x55ac50e59cf0;  1 drivers
+L_0x55ac50e59900 .arith/mult 32, L_0x55ac50e59120, v0x55ac50e449e0_1;
+L_0x55ac50e59a30 .arith/mult 32, L_0x55ac50e592a0, v0x55ac50e44aa0_1;
+L_0x55ac50e59b60 .arith/sub 32, L_0x55ac50e59900, L_0x55ac50e59a30;
+L_0x55ac50e59c50 .arith/mult 32, L_0x55ac50e59120, v0x55ac50e44aa0_1;
+L_0x55ac50e59cf0 .arith/mult 32, L_0x55ac50e592a0, v0x55ac50e449e0_1;
+L_0x55ac50e59d90 .arith/sum 32, L_0x55ac50e59c50, L_0x55ac50e59cf0;
+S_0x55ac50e382f0 .scope module, "m6" "complex_mul" 3 58, 4 1 0, S_0x55ac50dc1e80;
  .timescale 0 0;
-    .port_info 0 /INPUT 8 "Xr";
-    .port_info 1 /INPUT 8 "Xi";
-    .port_info 2 /INPUT 8 "Yr";
-    .port_info 3 /INPUT 8 "Yi";
-    .port_info 4 /OUTPUT 8 "Pr";
-    .port_info 5 /OUTPUT 8 "Pi";
-v0x563f0de62460_0 .net "Pi", 7 0, L_0x563f0de6f8b0;  alias, 1 drivers
-v0x563f0de62540_0 .net "Pr", 7 0, L_0x563f0de6f630;  alias, 1 drivers
-v0x563f0de62620_0 .net "Xi", 7 0, L_0x7f27bf5ec0f0;  alias, 1 drivers
-v0x563f0de626e0_0 .net "Xr", 7 0, L_0x563f0de6e5c0;  alias, 1 drivers
-v0x563f0de6b7f0_2 .array/port v0x563f0de6b7f0, 2;
-v0x563f0de627c0_0 .net "Yi", 7 0, v0x563f0de6b7f0_2;  1 drivers
-v0x563f0de6b730_2 .array/port v0x563f0de6b730, 2;
-v0x563f0de628f0_0 .net "Yr", 7 0, v0x563f0de6b730_2;  1 drivers
-v0x563f0de629d0_0 .net *"_ivl_1", 7 0, L_0x563f0de6f3d0;  1 drivers
-v0x563f0de62ab0_0 .net *"_ivl_3", 7 0, L_0x563f0de6f500;  1 drivers
-v0x563f0de62b90_0 .net *"_ivl_7", 7 0, L_0x563f0de6f770;  1 drivers
-v0x563f0de62d00_0 .net *"_ivl_9", 7 0, L_0x563f0de6f810;  1 drivers
-L_0x563f0de6f3d0 .arith/mult 8, L_0x563f0de6e5c0, v0x563f0de6b730_2;
-L_0x563f0de6f500 .arith/mult 8, L_0x7f27bf5ec0f0, v0x563f0de6b7f0_2;
-L_0x563f0de6f630 .arith/sub 8, L_0x563f0de6f3d0, L_0x563f0de6f500;
-L_0x563f0de6f770 .arith/mult 8, L_0x563f0de6e5c0, v0x563f0de6b7f0_2;
-L_0x563f0de6f810 .arith/mult 8, L_0x7f27bf5ec0f0, v0x563f0de6b730_2;
-L_0x563f0de6f8b0 .arith/sum 8, L_0x563f0de6f770, L_0x563f0de6f810;
-S_0x563f0de62ea0 .scope module, "m7" "complex_mul" 3 44, 4 1 0, S_0x563f0de38220;
+    .port_info 0 /INPUT 32 "Xr";
+    .port_info 1 /INPUT 32 "Xi";
+    .port_info 2 /INPUT 32 "Yr";
+    .port_info 3 /INPUT 32 "Yi";
+    .port_info 4 /OUTPUT 32 "Pr";
+    .port_info 5 /OUTPUT 32 "Pi";
+v0x55ac50e38520_0 .net "Pi", 31 0, L_0x55ac50e5a490;  alias, 1 drivers
+v0x55ac50e38600_0 .net "Pr", 31 0, L_0x55ac50e5a1c0;  alias, 1 drivers
+v0x55ac50e386e0_0 .net "Xi", 31 0, L_0x55ac50e58f60;  alias, 1 drivers
+v0x55ac50e387a0_0 .net "Xr", 31 0, L_0x55ac50e58be0;  alias, 1 drivers
+v0x55ac50e44aa0_2 .array/port v0x55ac50e44aa0, 2;
+v0x55ac50e38880_0 .net "Yi", 31 0, v0x55ac50e44aa0_2;  1 drivers
+v0x55ac50e449e0_2 .array/port v0x55ac50e449e0, 2;
+v0x55ac50e389b0_0 .net "Yr", 31 0, v0x55ac50e449e0_2;  1 drivers
+v0x55ac50e38a90_0 .net *"_ivl_1", 31 0, L_0x55ac50e59f60;  1 drivers
+v0x55ac50e38b70_0 .net *"_ivl_3", 31 0, L_0x55ac50e5a090;  1 drivers
+v0x55ac50e38c50_0 .net *"_ivl_7", 31 0, L_0x55ac50e5a350;  1 drivers
+v0x55ac50e38d30_0 .net *"_ivl_9", 31 0, L_0x55ac50e5a3f0;  1 drivers
+L_0x55ac50e59f60 .arith/mult 32, L_0x55ac50e58be0, v0x55ac50e449e0_2;
+L_0x55ac50e5a090 .arith/mult 32, L_0x55ac50e58f60, v0x55ac50e44aa0_2;
+L_0x55ac50e5a1c0 .arith/sub 32, L_0x55ac50e59f60, L_0x55ac50e5a090;
+L_0x55ac50e5a350 .arith/mult 32, L_0x55ac50e58be0, v0x55ac50e44aa0_2;
+L_0x55ac50e5a3f0 .arith/mult 32, L_0x55ac50e58f60, v0x55ac50e449e0_2;
+L_0x55ac50e5a490 .arith/sum 32, L_0x55ac50e5a350, L_0x55ac50e5a3f0;
+S_0x55ac50e38ed0 .scope module, "m7" "complex_mul" 3 59, 4 1 0, S_0x55ac50dc1e80;
  .timescale 0 0;
-    .port_info 0 /INPUT 8 "Xr";
-    .port_info 1 /INPUT 8 "Xi";
-    .port_info 2 /INPUT 8 "Yr";
-    .port_info 3 /INPUT 8 "Yi";
-    .port_info 4 /OUTPUT 8 "Pr";
-    .port_info 5 /OUTPUT 8 "Pi";
-v0x563f0de630d0_0 .net "Pi", 7 0, L_0x563f0de6ff10;  alias, 1 drivers
-v0x563f0de631d0_0 .net "Pr", 7 0, L_0x563f0de6fc90;  alias, 1 drivers
-v0x563f0de632b0_0 .net "Xi", 7 0, L_0x563f0de6e750;  alias, 1 drivers
-v0x563f0de63370_0 .net "Xr", 7 0, L_0x563f0de6e6b0;  alias, 1 drivers
-v0x563f0de6b7f0_3 .array/port v0x563f0de6b7f0, 3;
-v0x563f0de63450_0 .net "Yi", 7 0, v0x563f0de6b7f0_3;  1 drivers
-v0x563f0de6b730_3 .array/port v0x563f0de6b730, 3;
-v0x563f0de63580_0 .net "Yr", 7 0, v0x563f0de6b730_3;  1 drivers
-v0x563f0de63660_0 .net *"_ivl_1", 7 0, L_0x563f0de6fa30;  1 drivers
-v0x563f0de63740_0 .net *"_ivl_3", 7 0, L_0x563f0de6fb60;  1 drivers
-v0x563f0de63820_0 .net *"_ivl_7", 7 0, L_0x563f0de6fdd0;  1 drivers
-v0x563f0de63990_0 .net *"_ivl_9", 7 0, L_0x563f0de6fe70;  1 drivers
-L_0x563f0de6fa30 .arith/mult 8, L_0x563f0de6e6b0, v0x563f0de6b730_3;
-L_0x563f0de6fb60 .arith/mult 8, L_0x563f0de6e750, v0x563f0de6b7f0_3;
-L_0x563f0de6fc90 .arith/sub 8, L_0x563f0de6fa30, L_0x563f0de6fb60;
-L_0x563f0de6fdd0 .arith/mult 8, L_0x563f0de6e6b0, v0x563f0de6b7f0_3;
-L_0x563f0de6fe70 .arith/mult 8, L_0x563f0de6e750, v0x563f0de6b730_3;
-L_0x563f0de6ff10 .arith/sum 8, L_0x563f0de6fdd0, L_0x563f0de6fe70;
-S_0x563f0de63b30 .scope module, "radix1" "fft_n4" 3 38, 5 2 0, S_0x563f0de38220;
+    .port_info 0 /INPUT 32 "Xr";
+    .port_info 1 /INPUT 32 "Xi";
+    .port_info 2 /INPUT 32 "Yr";
+    .port_info 3 /INPUT 32 "Yi";
+    .port_info 4 /OUTPUT 32 "Pr";
+    .port_info 5 /OUTPUT 32 "Pi";
+v0x55ac50e39100_0 .net "Pi", 31 0, L_0x55ac50e5ab90;  alias, 1 drivers
+v0x55ac50e39200_0 .net "Pr", 31 0, L_0x55ac50e5a8c0;  alias, 1 drivers
+v0x55ac50e392e0_0 .net "Xi", 31 0, L_0x55ac50e59340;  alias, 1 drivers
+v0x55ac50e393a0_0 .net "Xr", 31 0, L_0x55ac50e591c0;  alias, 1 drivers
+v0x55ac50e44aa0_3 .array/port v0x55ac50e44aa0, 3;
+v0x55ac50e39480_0 .net "Yi", 31 0, v0x55ac50e44aa0_3;  1 drivers
+v0x55ac50e449e0_3 .array/port v0x55ac50e449e0, 3;
+v0x55ac50e395b0_0 .net "Yr", 31 0, v0x55ac50e449e0_3;  1 drivers
+v0x55ac50e39690_0 .net *"_ivl_1", 31 0, L_0x55ac50e5a660;  1 drivers
+v0x55ac50e39770_0 .net *"_ivl_3", 31 0, L_0x55ac50e5a790;  1 drivers
+v0x55ac50e39850_0 .net *"_ivl_7", 31 0, L_0x55ac50e5aa50;  1 drivers
+v0x55ac50e39930_0 .net *"_ivl_9", 31 0, L_0x55ac50e5aaf0;  1 drivers
+L_0x55ac50e5a660 .arith/mult 32, L_0x55ac50e591c0, v0x55ac50e449e0_3;
+L_0x55ac50e5a790 .arith/mult 32, L_0x55ac50e59340, v0x55ac50e44aa0_3;
+L_0x55ac50e5a8c0 .arith/sub 32, L_0x55ac50e5a660, L_0x55ac50e5a790;
+L_0x55ac50e5aa50 .arith/mult 32, L_0x55ac50e591c0, v0x55ac50e44aa0_3;
+L_0x55ac50e5aaf0 .arith/mult 32, L_0x55ac50e59340, v0x55ac50e449e0_3;
+L_0x55ac50e5ab90 .arith/sum 32, L_0x55ac50e5aa50, L_0x55ac50e5aaf0;
+S_0x55ac50e39ad0 .scope module, "r1" "fft_n4" 3 53, 5 2 0, S_0x55ac50dc1e80;
  .timescale 0 0;
-    .port_info 0 /INPUT 8 "A";
-    .port_info 1 /INPUT 8 "B";
-    .port_info 2 /INPUT 8 "C";
-    .port_info 3 /INPUT 8 "D";
-    .port_info 4 /OUTPUT 8 "Xr0";
-    .port_info 5 /OUTPUT 8 "Xr1";
-    .port_info 6 /OUTPUT 8 "Xr2";
-    .port_info 7 /OUTPUT 8 "Xr3";
-    .port_info 8 /OUTPUT 8 "Xi0";
-    .port_info 9 /OUTPUT 8 "Xi1";
-    .port_info 10 /OUTPUT 8 "Xi2";
-    .port_info 11 /OUTPUT 8 "Xi3";
-v0x563f0de63d10_0 .net "A", 7 0, v0x563f0de6bbe0_0;  alias, 1 drivers
-v0x563f0de63e10_0 .net "B", 7 0, v0x563f0de6be20_0;  alias, 1 drivers
-v0x563f0de63ef0_0 .net "C", 7 0, v0x563f0de6c020_0;  alias, 1 drivers
-v0x563f0de63fb0_0 .net "D", 7 0, v0x563f0de6c290_0;  alias, 1 drivers
-v0x563f0de64090_0 .net "Xi0", 7 0, L_0x7f27bf5ec018;  alias, 1 drivers
-v0x563f0de641c0_0 .net "Xi1", 7 0, L_0x563f0de6d910;  alias, 1 drivers
-v0x563f0de642a0_0 .net "Xi2", 7 0, L_0x7f27bf5ec060;  alias, 1 drivers
-v0x563f0de64380_0 .net "Xi3", 7 0, L_0x563f0de6dde0;  alias, 1 drivers
-v0x563f0de64460_0 .net "Xr0", 7 0, L_0x563f0de6d6f0;  alias, 1 drivers
-v0x563f0de645d0_0 .net "Xr1", 7 0, L_0x563f0de6d7e0;  alias, 1 drivers
-v0x563f0de646b0_0 .net "Xr2", 7 0, L_0x563f0de6dc50;  alias, 1 drivers
-v0x563f0de64790_0 .net "Xr3", 7 0, L_0x563f0de6dd40;  alias, 1 drivers
-v0x563f0de64870_0 .net *"_ivl_0", 7 0, L_0x563f0de6d560;  1 drivers
-v0x563f0de64950_0 .net *"_ivl_12", 7 0, L_0x563f0de6dad0;  1 drivers
-v0x563f0de64a30_0 .net *"_ivl_14", 7 0, L_0x563f0de6dbb0;  1 drivers
-v0x563f0de64b10_0 .net *"_ivl_2", 7 0, L_0x563f0de6d600;  1 drivers
-L_0x563f0de6d560 .arith/sum 8, v0x563f0de6bbe0_0, v0x563f0de6be20_0;
-L_0x563f0de6d600 .arith/sum 8, L_0x563f0de6d560, v0x563f0de6c020_0;
-L_0x563f0de6d6f0 .arith/sum 8, L_0x563f0de6d600, v0x563f0de6c290_0;
-L_0x563f0de6d7e0 .arith/sub 8, v0x563f0de6bbe0_0, v0x563f0de6c020_0;
-L_0x563f0de6d910 .arith/sub 8, v0x563f0de6c290_0, v0x563f0de6be20_0;
-L_0x563f0de6dad0 .arith/sub 8, v0x563f0de6bbe0_0, v0x563f0de6be20_0;
-L_0x563f0de6dbb0 .arith/sum 8, L_0x563f0de6dad0, v0x563f0de6c020_0;
-L_0x563f0de6dc50 .arith/sub 8, L_0x563f0de6dbb0, v0x563f0de6c290_0;
-L_0x563f0de6dd40 .arith/sub 8, v0x563f0de6bbe0_0, v0x563f0de6c020_0;
-L_0x563f0de6dde0 .arith/sub 8, v0x563f0de6be20_0, v0x563f0de6c290_0;
-S_0x563f0de64d70 .scope module, "radix2" "fft_n4" 3 39, 5 2 0, S_0x563f0de38220;
+    .port_info 0 /INPUT 32 "Ar";
+    .port_info 1 /INPUT 32 "Ai";
+    .port_info 2 /INPUT 32 "Br";
+    .port_info 3 /INPUT 32 "Bi";
+    .port_info 4 /INPUT 32 "Cr";
+    .port_info 5 /INPUT 32 "Ci";
+    .port_info 6 /INPUT 32 "Dr";
+    .port_info 7 /INPUT 32 "Di";
+    .port_info 8 /OUTPUT 32 "Xr0";
+    .port_info 9 /OUTPUT 32 "Xr1";
+    .port_info 10 /OUTPUT 32 "Xr2";
+    .port_info 11 /OUTPUT 32 "Xr3";
+    .port_info 12 /OUTPUT 32 "Xi0";
+    .port_info 13 /OUTPUT 32 "Xi1";
+    .port_info 14 /OUTPUT 32 "Xi2";
+    .port_info 15 /OUTPUT 32 "Xi3";
+v0x55ac50e39ed0_0 .net "Ai", 31 0, L_0x55ac50e464b0;  alias, 1 drivers
+v0x55ac50e39fd0_0 .net "Ar", 31 0, L_0x55ac50e462c0;  alias, 1 drivers
+v0x55ac50e3a0b0_0 .net "Bi", 31 0, L_0x55ac50e46580;  alias, 1 drivers
+v0x55ac50e3a170_0 .net "Br", 31 0, L_0x55ac50e46380;  alias, 1 drivers
+v0x55ac50e3a250_0 .net "Ci", 31 0, L_0x55ac50e568c0;  alias, 1 drivers
+v0x55ac50e3a380_0 .net "Cr", 31 0, L_0x55ac50e56660;  alias, 1 drivers
+v0x55ac50e3a460_0 .net "Di", 31 0, L_0x55ac50e57770;  alias, 1 drivers
+v0x55ac50e3a540_0 .net "Dr", 31 0, L_0x55ac50e574c0;  alias, 1 drivers
+v0x55ac50e3a620_0 .net "Xi0", 31 0, L_0x55ac50e581d0;  alias, 1 drivers
+v0x55ac50e3a790_0 .net "Xi1", 31 0, L_0x55ac50e58550;  alias, 1 drivers
+v0x55ac50e3a870_0 .net "Xi2", 31 0, L_0x55ac50e587b0;  alias, 1 drivers
+v0x55ac50e3a950_0 .net "Xi3", 31 0, L_0x55ac50e58930;  alias, 1 drivers
+v0x55ac50e3aa30_0 .net "Xr0", 31 0, L_0x55ac50e57fc0;  alias, 1 drivers
+v0x55ac50e3ab10_0 .net "Xr1", 31 0, L_0x55ac50e58390;  alias, 1 drivers
+v0x55ac50e3abf0_0 .net "Xr2", 31 0, L_0x55ac50e58710;  alias, 1 drivers
+v0x55ac50e3acd0_0 .net "Xr3", 31 0, L_0x55ac50e58890;  alias, 1 drivers
+L_0x55ac50e57fc0 .arith/sum 32, L_0x55ac50e462c0, L_0x55ac50e56660;
+L_0x55ac50e581d0 .arith/sum 32, L_0x55ac50e464b0, L_0x55ac50e568c0;
+L_0x55ac50e58390 .arith/sum 32, L_0x55ac50e46380, L_0x55ac50e574c0;
+L_0x55ac50e58550 .arith/sub 32, L_0x55ac50e46580, L_0x55ac50e57770;
+L_0x55ac50e58710 .arith/sub 32, L_0x55ac50e462c0, L_0x55ac50e56660;
+L_0x55ac50e587b0 .arith/sub 32, L_0x55ac50e464b0, L_0x55ac50e568c0;
+L_0x55ac50e58890 .arith/sub 32, L_0x55ac50e46380, L_0x55ac50e574c0;
+L_0x55ac50e58930 .arith/sub 32, L_0x55ac50e46580, L_0x55ac50e57770;
+S_0x55ac50e3b040 .scope module, "r2" "fft_n4" 3 54, 5 2 0, S_0x55ac50dc1e80;
  .timescale 0 0;
-    .port_info 0 /INPUT 8 "A";
-    .port_info 1 /INPUT 8 "B";
-    .port_info 2 /INPUT 8 "C";
-    .port_info 3 /INPUT 8 "D";
-    .port_info 4 /OUTPUT 8 "Xr0";
-    .port_info 5 /OUTPUT 8 "Xr1";
-    .port_info 6 /OUTPUT 8 "Xr2";
-    .port_info 7 /OUTPUT 8 "Xr3";
-    .port_info 8 /OUTPUT 8 "Xi0";
-    .port_info 9 /OUTPUT 8 "Xi1";
-    .port_info 10 /OUTPUT 8 "Xi2";
-    .port_info 11 /OUTPUT 8 "Xi3";
-v0x563f0de65030_0 .net "A", 7 0, v0x563f0de6bd10_0;  alias, 1 drivers
-v0x563f0de65130_0 .net "B", 7 0, v0x563f0de6bf10_0;  alias, 1 drivers
-v0x563f0de65210_0 .net "C", 7 0, v0x563f0de6c180_0;  alias, 1 drivers
-v0x563f0de652d0_0 .net "D", 7 0, v0x563f0de6c3a0_0;  alias, 1 drivers
-v0x563f0de653b0_0 .net "Xi0", 7 0, L_0x7f27bf5ec0a8;  alias, 1 drivers
-v0x563f0de654c0_0 .net "Xi1", 7 0, L_0x563f0de6e280;  alias, 1 drivers
-v0x563f0de65560_0 .net "Xi2", 7 0, L_0x7f27bf5ec0f0;  alias, 1 drivers
-v0x563f0de65600_0 .net "Xi3", 7 0, L_0x563f0de6e750;  alias, 1 drivers
-v0x563f0de656a0_0 .net "Xr0", 7 0, L_0x563f0de6e020;  alias, 1 drivers
-v0x563f0de657d0_0 .net "Xr1", 7 0, L_0x563f0de6e0c0;  alias, 1 drivers
-v0x563f0de65870_0 .net "Xr2", 7 0, L_0x563f0de6e5c0;  alias, 1 drivers
-v0x563f0de65910_0 .net "Xr3", 7 0, L_0x563f0de6e6b0;  alias, 1 drivers
-v0x563f0de659e0_0 .net *"_ivl_0", 7 0, L_0x563f0de6dee0;  1 drivers
-v0x563f0de65aa0_0 .net *"_ivl_12", 7 0, L_0x563f0de6e440;  1 drivers
-v0x563f0de65b80_0 .net *"_ivl_14", 7 0, L_0x563f0de6e520;  1 drivers
-v0x563f0de65c60_0 .net *"_ivl_2", 7 0, L_0x563f0de6df80;  1 drivers
-L_0x563f0de6dee0 .arith/sum 8, v0x563f0de6bd10_0, v0x563f0de6bf10_0;
-L_0x563f0de6df80 .arith/sum 8, L_0x563f0de6dee0, v0x563f0de6c180_0;
-L_0x563f0de6e020 .arith/sum 8, L_0x563f0de6df80, v0x563f0de6c3a0_0;
-L_0x563f0de6e0c0 .arith/sub 8, v0x563f0de6bd10_0, v0x563f0de6c180_0;
-L_0x563f0de6e280 .arith/sub 8, v0x563f0de6c3a0_0, v0x563f0de6bf10_0;
-L_0x563f0de6e440 .arith/sub 8, v0x563f0de6bd10_0, v0x563f0de6bf10_0;
-L_0x563f0de6e520 .arith/sum 8, L_0x563f0de6e440, v0x563f0de6c180_0;
-L_0x563f0de6e5c0 .arith/sub 8, L_0x563f0de6e520, v0x563f0de6c3a0_0;
-L_0x563f0de6e6b0 .arith/sub 8, v0x563f0de6bd10_0, v0x563f0de6c180_0;
-L_0x563f0de6e750 .arith/sub 8, v0x563f0de6bf10_0, v0x563f0de6c3a0_0;
-S_0x563f0de65f30 .scope module, "rd1" "fft2" 3 46, 6 1 0, S_0x563f0de38220;
+    .port_info 0 /INPUT 32 "Ar";
+    .port_info 1 /INPUT 32 "Ai";
+    .port_info 2 /INPUT 32 "Br";
+    .port_info 3 /INPUT 32 "Bi";
+    .port_info 4 /INPUT 32 "Cr";
+    .port_info 5 /INPUT 32 "Ci";
+    .port_info 6 /INPUT 32 "Dr";
+    .port_info 7 /INPUT 32 "Di";
+    .port_info 8 /OUTPUT 32 "Xr0";
+    .port_info 9 /OUTPUT 32 "Xr1";
+    .port_info 10 /OUTPUT 32 "Xr2";
+    .port_info 11 /OUTPUT 32 "Xr3";
+    .port_info 12 /OUTPUT 32 "Xi0";
+    .port_info 13 /OUTPUT 32 "Xi1";
+    .port_info 14 /OUTPUT 32 "Xi2";
+    .port_info 15 /OUTPUT 32 "Xi3";
+v0x55ac50e3b360_0 .net "Ai", 31 0, L_0x55ac50e56cc0;  alias, 1 drivers
+v0x55ac50e3b460_0 .net "Ar", 31 0, L_0x55ac50e56a60;  alias, 1 drivers
+v0x55ac50e3b540_0 .net "Bi", 31 0, L_0x55ac50e56d90;  alias, 1 drivers
+v0x55ac50e3b600_0 .net "Br", 31 0, L_0x55ac50e56b00;  alias, 1 drivers
+v0x55ac50e3b6e0_0 .net "Ci", 31 0, L_0x55ac50e570c0;  alias, 1 drivers
+v0x55ac50e3b810_0 .net "Cr", 31 0, L_0x55ac50e56e60;  alias, 1 drivers
+v0x55ac50e3b8f0_0 .net "Di", 31 0, L_0x55ac50e57e40;  alias, 1 drivers
+v0x55ac50e3b9d0_0 .net "Dr", 31 0, L_0x55ac50e57be0;  alias, 1 drivers
+v0x55ac50e3bab0_0 .net "Xi0", 31 0, L_0x55ac50e58be0;  alias, 1 drivers
+v0x55ac50e3bc00_0 .net "Xi1", 31 0, L_0x55ac50e58f60;  alias, 1 drivers
+v0x55ac50e3bca0_0 .net "Xi2", 31 0, L_0x55ac50e591c0;  alias, 1 drivers
+v0x55ac50e3bd40_0 .net "Xi3", 31 0, L_0x55ac50e59340;  alias, 1 drivers
+v0x55ac50e3bde0_0 .net "Xr0", 31 0, L_0x55ac50e58a20;  alias, 1 drivers
+v0x55ac50e3be80_0 .net "Xr1", 31 0, L_0x55ac50e58da0;  alias, 1 drivers
+v0x55ac50e3bf20_0 .net "Xr2", 31 0, L_0x55ac50e59120;  alias, 1 drivers
+v0x55ac50e3bfc0_0 .net "Xr3", 31 0, L_0x55ac50e592a0;  alias, 1 drivers
+L_0x55ac50e58a20 .arith/sum 32, L_0x55ac50e56a60, L_0x55ac50e56e60;
+L_0x55ac50e58be0 .arith/sum 32, L_0x55ac50e56cc0, L_0x55ac50e570c0;
+L_0x55ac50e58da0 .arith/sum 32, L_0x55ac50e56b00, L_0x55ac50e57be0;
+L_0x55ac50e58f60 .arith/sub 32, L_0x55ac50e56d90, L_0x55ac50e57e40;
+L_0x55ac50e59120 .arith/sub 32, L_0x55ac50e56a60, L_0x55ac50e56e60;
+L_0x55ac50e591c0 .arith/sub 32, L_0x55ac50e56cc0, L_0x55ac50e570c0;
+L_0x55ac50e592a0 .arith/sub 32, L_0x55ac50e56b00, L_0x55ac50e57be0;
+L_0x55ac50e59340 .arith/sub 32, L_0x55ac50e56d90, L_0x55ac50e57e40;
+S_0x55ac50e3c300 .scope module, "rd1" "fft2" 3 42, 6 1 0, S_0x55ac50dc1e80;
  .timescale 0 0;
-    .port_info 0 /INPUT 8 "xr";
-    .port_info 1 /INPUT 8 "xi";
-    .port_info 2 /INPUT 8 "yr";
-    .port_info 3 /INPUT 8 "yi";
-    .port_info 4 /OUTPUT 8 "Xr";
-    .port_info 5 /OUTPUT 8 "Xi";
-    .port_info 6 /OUTPUT 8 "Yr";
-    .port_info 7 /OUTPUT 8 "Yi";
-v0x563f0de66110_0 .net "Xi", 7 0, L_0x563f0de702f0;  alias, 1 drivers
-v0x563f0de66210_0 .net "Xr", 7 0, L_0x563f0de70090;  alias, 1 drivers
-v0x563f0de662f0_0 .net "Yi", 7 0, L_0x563f0de704b0;  alias, 1 drivers
-v0x563f0de663e0_0 .net "Yr", 7 0, L_0x563f0de70250;  alias, 1 drivers
-v0x563f0de664c0_0 .net "xi", 7 0, L_0x7f27bf5ec018;  alias, 1 drivers
-v0x563f0de665d0_0 .net "xr", 7 0, L_0x563f0de6d6f0;  alias, 1 drivers
-v0x563f0de666a0_0 .net "yi", 7 0, L_0x563f0de6ec90;  alias, 1 drivers
-v0x563f0de66770_0 .net "yr", 7 0, L_0x563f0de6eab0;  alias, 1 drivers
-L_0x563f0de70090 .arith/sum 8, L_0x563f0de6d6f0, L_0x563f0de6eab0;
-L_0x563f0de70250 .arith/sub 8, L_0x563f0de6d6f0, L_0x563f0de6eab0;
-L_0x563f0de702f0 .arith/sum 8, L_0x7f27bf5ec018, L_0x563f0de6ec90;
-L_0x563f0de704b0 .arith/sub 8, L_0x7f27bf5ec018, L_0x563f0de6ec90;
-S_0x563f0de66970 .scope module, "rd2" "fft2" 3 47, 6 1 0, S_0x563f0de38220;
+    .port_info 0 /INPUT 32 "xr";
+    .port_info 1 /INPUT 32 "xi";
+    .port_info 2 /INPUT 32 "yr";
+    .port_info 3 /INPUT 32 "yi";
+    .port_info 4 /OUTPUT 32 "Xr";
+    .port_info 5 /OUTPUT 32 "Xi";
+    .port_info 6 /OUTPUT 32 "Yr";
+    .port_info 7 /OUTPUT 32 "Yi";
+v0x55ac50e3c4e0_0 .net "Xi", 31 0, L_0x55ac50e464b0;  alias, 1 drivers
+v0x55ac50e3c5f0_0 .net "Xr", 31 0, L_0x55ac50e462c0;  alias, 1 drivers
+v0x55ac50e3c6c0_0 .net "Yi", 31 0, L_0x55ac50e46580;  alias, 1 drivers
+v0x55ac50e3c7c0_0 .net "Yr", 31 0, L_0x55ac50e46380;  alias, 1 drivers
+L_0x7f34492a2018 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0x55ac50e3c890_0 .net "xi", 31 0, L_0x7f34492a2018;  1 drivers
+v0x55ac50e3c980_0 .net "xr", 31 0, v0x55ac50e44e90_0;  alias, 1 drivers
+L_0x7f34492a2060 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0x55ac50e3ca60_0 .net "yi", 31 0, L_0x7f34492a2060;  1 drivers
+v0x55ac50e3cb40_0 .net "yr", 31 0, v0x55ac50e452d0_0;  alias, 1 drivers
+L_0x55ac50e462c0 .arith/sum 32, v0x55ac50e44e90_0, v0x55ac50e452d0_0;
+L_0x55ac50e46380 .arith/sub 32, v0x55ac50e44e90_0, v0x55ac50e452d0_0;
+L_0x55ac50e464b0 .arith/sum 32, L_0x7f34492a2018, L_0x7f34492a2060;
+L_0x55ac50e46580 .arith/sub 32, L_0x7f34492a2018, L_0x7f34492a2060;
+S_0x55ac50e3cd70 .scope module, "rd2" "fft2" 3 43, 6 1 0, S_0x55ac50dc1e80;
  .timescale 0 0;
-    .port_info 0 /INPUT 8 "xr";
-    .port_info 1 /INPUT 8 "xi";
-    .port_info 2 /INPUT 8 "yr";
-    .port_info 3 /INPUT 8 "yi";
-    .port_info 4 /OUTPUT 8 "Xr";
-    .port_info 5 /OUTPUT 8 "Xi";
-    .port_info 6 /OUTPUT 8 "Yr";
-    .port_info 7 /OUTPUT 8 "Yi";
-v0x563f0de66c20_0 .net "Xi", 7 0, L_0x563f0de707b0;  alias, 1 drivers
-v0x563f0de66d20_0 .net "Xr", 7 0, L_0x563f0de70550;  alias, 1 drivers
-v0x563f0de66e00_0 .net "Yi", 7 0, L_0x563f0de70970;  alias, 1 drivers
-v0x563f0de66ef0_0 .net "Yr", 7 0, L_0x563f0de70710;  alias, 1 drivers
-v0x563f0de66fd0_0 .net "xi", 7 0, L_0x563f0de6d910;  alias, 1 drivers
-v0x563f0de670e0_0 .net "xr", 7 0, L_0x563f0de6d7e0;  alias, 1 drivers
-v0x563f0de671b0_0 .net "yi", 7 0, L_0x563f0de6f250;  alias, 1 drivers
-v0x563f0de67280_0 .net "yr", 7 0, L_0x563f0de6efd0;  alias, 1 drivers
-L_0x563f0de70550 .arith/sum 8, L_0x563f0de6d7e0, L_0x563f0de6efd0;
-L_0x563f0de70710 .arith/sub 8, L_0x563f0de6d7e0, L_0x563f0de6efd0;
-L_0x563f0de707b0 .arith/sum 8, L_0x563f0de6d910, L_0x563f0de6f250;
-L_0x563f0de70970 .arith/sub 8, L_0x563f0de6d910, L_0x563f0de6f250;
-S_0x563f0de67480 .scope module, "rd3" "fft2" 3 48, 6 1 0, S_0x563f0de38220;
+    .port_info 0 /INPUT 32 "xr";
+    .port_info 1 /INPUT 32 "xi";
+    .port_info 2 /INPUT 32 "yr";
+    .port_info 3 /INPUT 32 "yi";
+    .port_info 4 /OUTPUT 32 "Xr";
+    .port_info 5 /OUTPUT 32 "Xi";
+    .port_info 6 /OUTPUT 32 "Yr";
+    .port_info 7 /OUTPUT 32 "Yi";
+v0x55ac50e3d020_0 .net "Xi", 31 0, L_0x55ac50e568c0;  alias, 1 drivers
+v0x55ac50e3d100_0 .net "Xr", 31 0, L_0x55ac50e56660;  alias, 1 drivers
+v0x55ac50e3d1d0_0 .net "Yi", 31 0, L_0x55ac50e56990;  alias, 1 drivers
+v0x55ac50e3d2a0_0 .net "Yr", 31 0, L_0x55ac50e56700;  alias, 1 drivers
+L_0x7f34492a20a8 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0x55ac50e3d380_0 .net "xi", 31 0, L_0x7f34492a20a8;  1 drivers
+v0x55ac50e3d4b0_0 .net "xr", 31 0, v0x55ac50e450d0_0;  alias, 1 drivers
+L_0x7f34492a20f0 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0x55ac50e3d590_0 .net "yi", 31 0, L_0x7f34492a20f0;  1 drivers
+v0x55ac50e3d670_0 .net "yr", 31 0, v0x55ac50e45540_0;  alias, 1 drivers
+L_0x55ac50e56660 .arith/sum 32, v0x55ac50e450d0_0, v0x55ac50e45540_0;
+L_0x55ac50e56700 .arith/sub 32, v0x55ac50e450d0_0, v0x55ac50e45540_0;
+L_0x55ac50e568c0 .arith/sum 32, L_0x7f34492a20a8, L_0x7f34492a20f0;
+L_0x55ac50e56990 .arith/sub 32, L_0x7f34492a20a8, L_0x7f34492a20f0;
+S_0x55ac50e3d8a0 .scope module, "rd3" "fft2" 3 44, 6 1 0, S_0x55ac50dc1e80;
  .timescale 0 0;
-    .port_info 0 /INPUT 8 "xr";
-    .port_info 1 /INPUT 8 "xi";
-    .port_info 2 /INPUT 8 "yr";
-    .port_info 3 /INPUT 8 "yi";
-    .port_info 4 /OUTPUT 8 "Xr";
-    .port_info 5 /OUTPUT 8 "Xi";
-    .port_info 6 /OUTPUT 8 "Yr";
-    .port_info 7 /OUTPUT 8 "Yi";
-v0x563f0de67770_0 .net "Xi", 7 0, L_0x563f0de70c70;  alias, 1 drivers
-v0x563f0de67870_0 .net "Xr", 7 0, L_0x563f0de70a10;  alias, 1 drivers
-v0x563f0de67950_0 .net "Yi", 7 0, L_0x563f0de70e30;  alias, 1 drivers
-v0x563f0de67a40_0 .net "Yr", 7 0, L_0x563f0de70bd0;  alias, 1 drivers
-v0x563f0de67b20_0 .net "xi", 7 0, L_0x7f27bf5ec060;  alias, 1 drivers
-v0x563f0de67c30_0 .net "xr", 7 0, L_0x563f0de6dc50;  alias, 1 drivers
-v0x563f0de67d00_0 .net "yi", 7 0, L_0x563f0de6f8b0;  alias, 1 drivers
-v0x563f0de67dd0_0 .net "yr", 7 0, L_0x563f0de6f630;  alias, 1 drivers
-L_0x563f0de70a10 .arith/sum 8, L_0x563f0de6dc50, L_0x563f0de6f630;
-L_0x563f0de70bd0 .arith/sub 8, L_0x563f0de6dc50, L_0x563f0de6f630;
-L_0x563f0de70c70 .arith/sum 8, L_0x7f27bf5ec060, L_0x563f0de6f8b0;
-L_0x563f0de70e30 .arith/sub 8, L_0x7f27bf5ec060, L_0x563f0de6f8b0;
-S_0x563f0de67fd0 .scope module, "rd4" "fft2" 3 49, 6 1 0, S_0x563f0de38220;
+    .port_info 0 /INPUT 32 "xr";
+    .port_info 1 /INPUT 32 "xi";
+    .port_info 2 /INPUT 32 "yr";
+    .port_info 3 /INPUT 32 "yi";
+    .port_info 4 /OUTPUT 32 "Xr";
+    .port_info 5 /OUTPUT 32 "Xi";
+    .port_info 6 /OUTPUT 32 "Yr";
+    .port_info 7 /OUTPUT 32 "Yi";
+v0x55ac50e3db00_0 .net "Xi", 31 0, L_0x55ac50e56cc0;  alias, 1 drivers
+v0x55ac50e3dbe0_0 .net "Xr", 31 0, L_0x55ac50e56a60;  alias, 1 drivers
+v0x55ac50e3dcb0_0 .net "Yi", 31 0, L_0x55ac50e56d90;  alias, 1 drivers
+v0x55ac50e3ddb0_0 .net "Yr", 31 0, L_0x55ac50e56b00;  alias, 1 drivers
+L_0x7f34492a2138 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0x55ac50e3de80_0 .net "xi", 31 0, L_0x7f34492a2138;  1 drivers
+v0x55ac50e3df70_0 .net "xr", 31 0, v0x55ac50e44fc0_0;  alias, 1 drivers
+L_0x7f34492a2180 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0x55ac50e3e050_0 .net "yi", 31 0, L_0x7f34492a2180;  1 drivers
+v0x55ac50e3e130_0 .net "yr", 31 0, v0x55ac50e45430_0;  alias, 1 drivers
+L_0x55ac50e56a60 .arith/sum 32, v0x55ac50e44fc0_0, v0x55ac50e45430_0;
+L_0x55ac50e56b00 .arith/sub 32, v0x55ac50e44fc0_0, v0x55ac50e45430_0;
+L_0x55ac50e56cc0 .arith/sum 32, L_0x7f34492a2138, L_0x7f34492a2180;
+L_0x55ac50e56d90 .arith/sub 32, L_0x7f34492a2138, L_0x7f34492a2180;
+S_0x55ac50e3e360 .scope module, "rd4" "fft2" 3 45, 6 1 0, S_0x55ac50dc1e80;
  .timescale 0 0;
-    .port_info 0 /INPUT 8 "xr";
-    .port_info 1 /INPUT 8 "xi";
-    .port_info 2 /INPUT 8 "yr";
-    .port_info 3 /INPUT 8 "yi";
-    .port_info 4 /OUTPUT 8 "Xr";
-    .port_info 5 /OUTPUT 8 "Xi";
-    .port_info 6 /OUTPUT 8 "Yr";
-    .port_info 7 /OUTPUT 8 "Yi";
-v0x563f0de68280_0 .net "Xi", 7 0, L_0x563f0de71130;  alias, 1 drivers
-v0x563f0de68380_0 .net "Xr", 7 0, L_0x563f0de70ed0;  alias, 1 drivers
-v0x563f0de68460_0 .net "Yi", 7 0, L_0x563f0de712f0;  alias, 1 drivers
-v0x563f0de68550_0 .net "Yr", 7 0, L_0x563f0de71090;  alias, 1 drivers
-v0x563f0de68630_0 .net "xi", 7 0, L_0x563f0de6dde0;  alias, 1 drivers
-v0x563f0de68740_0 .net "xr", 7 0, L_0x563f0de6dd40;  alias, 1 drivers
-v0x563f0de68810_0 .net "yi", 7 0, L_0x563f0de6ff10;  alias, 1 drivers
-v0x563f0de688e0_0 .net "yr", 7 0, L_0x563f0de6fc90;  alias, 1 drivers
-L_0x563f0de70ed0 .arith/sum 8, L_0x563f0de6dd40, L_0x563f0de6fc90;
-L_0x563f0de71090 .arith/sub 8, L_0x563f0de6dd40, L_0x563f0de6fc90;
-L_0x563f0de71130 .arith/sum 8, L_0x563f0de6dde0, L_0x563f0de6ff10;
-L_0x563f0de712f0 .arith/sub 8, L_0x563f0de6dde0, L_0x563f0de6ff10;
-    .scope S_0x563f0de38220;
+    .port_info 0 /INPUT 32 "xr";
+    .port_info 1 /INPUT 32 "xi";
+    .port_info 2 /INPUT 32 "yr";
+    .port_info 3 /INPUT 32 "yi";
+    .port_info 4 /OUTPUT 32 "Xr";
+    .port_info 5 /OUTPUT 32 "Xi";
+    .port_info 6 /OUTPUT 32 "Yr";
+    .port_info 7 /OUTPUT 32 "Yi";
+v0x55ac50e3e610_0 .net "Xi", 31 0, L_0x55ac50e570c0;  alias, 1 drivers
+v0x55ac50e3e6f0_0 .net "Xr", 31 0, L_0x55ac50e56e60;  alias, 1 drivers
+v0x55ac50e3e7c0_0 .net "Yi", 31 0, L_0x55ac50e57160;  alias, 1 drivers
+v0x55ac50e3e890_0 .net "Yr", 31 0, L_0x55ac50e56f00;  alias, 1 drivers
+L_0x7f34492a21c8 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0x55ac50e3e970_0 .net "xi", 31 0, L_0x7f34492a21c8;  1 drivers
+v0x55ac50e3eaa0_0 .net "xr", 31 0, v0x55ac50e451c0_0;  alias, 1 drivers
+L_0x7f34492a2210 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0x55ac50e3eb80_0 .net "yi", 31 0, L_0x7f34492a2210;  1 drivers
+v0x55ac50e3ec60_0 .net "yr", 31 0, v0x55ac50e45650_0;  alias, 1 drivers
+L_0x55ac50e56e60 .arith/sum 32, v0x55ac50e451c0_0, v0x55ac50e45650_0;
+L_0x55ac50e56f00 .arith/sub 32, v0x55ac50e451c0_0, v0x55ac50e45650_0;
+L_0x55ac50e570c0 .arith/sum 32, L_0x7f34492a21c8, L_0x7f34492a2210;
+L_0x55ac50e57160 .arith/sub 32, L_0x7f34492a21c8, L_0x7f34492a2210;
+S_0x55ac50e3ee90 .scope module, "s1" "complex_mul" 3 49, 4 1 0, S_0x55ac50dc1e80;
+ .timescale 0 0;
+    .port_info 0 /INPUT 32 "Xr";
+    .port_info 1 /INPUT 32 "Xi";
+    .port_info 2 /INPUT 32 "Yr";
+    .port_info 3 /INPUT 32 "Yi";
+    .port_info 4 /OUTPUT 32 "Pr";
+    .port_info 5 /OUTPUT 32 "Pi";
+v0x55ac50e3f0c0_0 .net "Pi", 31 0, L_0x55ac50e57770;  alias, 1 drivers
+v0x55ac50e3f1a0_0 .net "Pr", 31 0, L_0x55ac50e574c0;  alias, 1 drivers
+v0x55ac50e3f270_0 .net "Xi", 31 0, L_0x55ac50e56990;  alias, 1 drivers
+v0x55ac50e3f370_0 .net "Xr", 31 0, L_0x55ac50e56700;  alias, 1 drivers
+L_0x7f34492a22a0 .functor BUFT 1, C4<11111111111111111111111111111111>, C4<0>, C4<0>, C4<0>;
+v0x55ac50e3f440_0 .net "Yi", 31 0, L_0x7f34492a22a0;  1 drivers
+L_0x7f34492a2258 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0x55ac50e3f530_0 .net "Yr", 31 0, L_0x7f34492a2258;  1 drivers
+v0x55ac50e3f610_0 .net *"_ivl_1", 31 0, L_0x55ac50e57230;  1 drivers
+v0x55ac50e3f6f0_0 .net *"_ivl_3", 31 0, L_0x55ac50e57360;  1 drivers
+v0x55ac50e3f7d0_0 .net *"_ivl_7", 31 0, L_0x55ac50e57560;  1 drivers
+v0x55ac50e3f940_0 .net *"_ivl_9", 31 0, L_0x55ac50e57680;  1 drivers
+L_0x55ac50e57230 .arith/mult 32, L_0x55ac50e56700, L_0x7f34492a2258;
+L_0x55ac50e57360 .arith/mult 32, L_0x55ac50e56990, L_0x7f34492a22a0;
+L_0x55ac50e574c0 .arith/sub 32, L_0x55ac50e57230, L_0x55ac50e57360;
+L_0x55ac50e57560 .arith/mult 32, L_0x55ac50e56700, L_0x7f34492a22a0;
+L_0x55ac50e57680 .arith/mult 32, L_0x55ac50e56990, L_0x7f34492a2258;
+L_0x55ac50e57770 .arith/sum 32, L_0x55ac50e57560, L_0x55ac50e57680;
+S_0x55ac50e3fae0 .scope module, "s2" "complex_mul" 3 50, 4 1 0, S_0x55ac50dc1e80;
+ .timescale 0 0;
+    .port_info 0 /INPUT 32 "Xr";
+    .port_info 1 /INPUT 32 "Xi";
+    .port_info 2 /INPUT 32 "Yr";
+    .port_info 3 /INPUT 32 "Yi";
+    .port_info 4 /OUTPUT 32 "Pr";
+    .port_info 5 /OUTPUT 32 "Pi";
+v0x55ac50e3fd10_0 .net "Pi", 31 0, L_0x55ac50e57e40;  alias, 1 drivers
+v0x55ac50e3fdf0_0 .net "Pr", 31 0, L_0x55ac50e57be0;  alias, 1 drivers
+v0x55ac50e3fec0_0 .net "Xi", 31 0, L_0x55ac50e57160;  alias, 1 drivers
+v0x55ac50e3ffc0_0 .net "Xr", 31 0, L_0x55ac50e56f00;  alias, 1 drivers
+L_0x7f34492a2330 .functor BUFT 1, C4<11111111111111111111111111111111>, C4<0>, C4<0>, C4<0>;
+v0x55ac50e40090_0 .net "Yi", 31 0, L_0x7f34492a2330;  1 drivers
+L_0x7f34492a22e8 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0x55ac50e40180_0 .net "Yr", 31 0, L_0x7f34492a22e8;  1 drivers
+v0x55ac50e40260_0 .net *"_ivl_1", 31 0, L_0x55ac50e57980;  1 drivers
+v0x55ac50e40340_0 .net *"_ivl_3", 31 0, L_0x55ac50e57ab0;  1 drivers
+v0x55ac50e40420_0 .net *"_ivl_7", 31 0, L_0x55ac50e57c80;  1 drivers
+v0x55ac50e40590_0 .net *"_ivl_9", 31 0, L_0x55ac50e57d50;  1 drivers
+L_0x55ac50e57980 .arith/mult 32, L_0x55ac50e56f00, L_0x7f34492a22e8;
+L_0x55ac50e57ab0 .arith/mult 32, L_0x55ac50e57160, L_0x7f34492a2330;
+L_0x55ac50e57be0 .arith/sub 32, L_0x55ac50e57980, L_0x55ac50e57ab0;
+L_0x55ac50e57c80 .arith/mult 32, L_0x55ac50e56f00, L_0x7f34492a2330;
+L_0x55ac50e57d50 .arith/mult 32, L_0x55ac50e57160, L_0x7f34492a22e8;
+L_0x55ac50e57e40 .arith/sum 32, L_0x55ac50e57c80, L_0x55ac50e57d50;
+    .scope S_0x55ac50dc1e80;
 T_0 ;
-    %vpi_call 3 30 "$readmemh", "sine.data", v0x563f0de6b7f0 {0 0 0};
-    %vpi_call 3 31 "$readmemh", "cosine.data", v0x563f0de6b730 {0 0 0};
+    %vpi_call 3 30 "$readmemh", "sine.data", v0x55ac50e44aa0 {0 0 0};
+    %vpi_call 3 31 "$readmemh", "cosine.data", v0x55ac50e449e0 {0 0 0};
     %end;
     .thread T_0;
-    .scope S_0x563f0de36620;
+    .scope S_0x55ac50dc2b40;
 T_1 ;
-    %vpi_call 2 30 "$monitor", v0x563f0de6cce0_0, " ", v0x563f0de6cdf0_0, " ", v0x563f0de6cf00_0, " ", v0x563f0de6d010_0, "\011", v0x563f0de6c4b0_0, " ", v0x563f0de6c570_0, " ", v0x563f0de6c680_0, " ", v0x563f0de6c790_0, "\012", v0x563f0de6d120_0, " ", v0x563f0de6d230_0, " ", v0x563f0de6d340_0, " ", v0x563f0de6d450_0, "\011", v0x563f0de6c8a0_0, " ", v0x563f0de6c9b0_0, " ", v0x563f0de6cac0_0, " ", v0x563f0de6cbd0_0, "\012" {0 0 0};
-    %pushi/vec4 120, 0, 8;
-    %store/vec4 v0x563f0de6bbe0_0, 0, 8;
-    %pushi/vec4 130, 0, 8;
-    %store/vec4 v0x563f0de6bd10_0, 0, 8;
-    %pushi/vec4 0, 0, 8;
-    %store/vec4 v0x563f0de6be20_0, 0, 8;
-    %pushi/vec4 110, 0, 8;
-    %store/vec4 v0x563f0de6bf10_0, 0, 8;
-    %pushi/vec4 0, 0, 8;
-    %store/vec4 v0x563f0de6c020_0, 0, 8;
-    %pushi/vec4 150, 0, 8;
-    %store/vec4 v0x563f0de6c180_0, 0, 8;
-    %pushi/vec4 200, 0, 8;
-    %store/vec4 v0x563f0de6c290_0, 0, 8;
-    %pushi/vec4 0, 0, 8;
-    %store/vec4 v0x563f0de6c3a0_0, 0, 8;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x55ac50e44e90_0, 0, 32;
+    %pushi/vec4 43, 0, 32;
+    %store/vec4 v0x55ac50e44fc0_0, 0, 32;
+    %pushi/vec4 78, 0, 32;
+    %store/vec4 v0x55ac50e450d0_0, 0, 32;
+    %pushi/vec4 97, 0, 32;
+    %store/vec4 v0x55ac50e451c0_0, 0, 32;
+    %pushi/vec4 97, 0, 32;
+    %store/vec4 v0x55ac50e452d0_0, 0, 32;
+    %pushi/vec4 78, 0, 32;
+    %store/vec4 v0x55ac50e45430_0, 0, 32;
+    %pushi/vec4 43, 0, 32;
+    %store/vec4 v0x55ac50e45540_0, 0, 32;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x55ac50e45650_0, 0, 32;
     %delay 10, 0;
-    %vpi_call 2 41 "$finish" {0 0 0};
+    %vpi_call 2 40 "$monitor", v0x55ac50e45c80_0, " ", v0x55ac50e45d20_0, " ", v0x55ac50e45df0_0, " ", v0x55ac50e45ec0_0, " ", v0x55ac50e45f90_0, " ", v0x55ac50e46060_0, " ", v0x55ac50e46130_0, " ", v0x55ac50e46200_0, "\012", v0x55ac50e45760_0, " ", v0x55ac50e45820_0, " ", v0x55ac50e458c0_0, " ", v0x55ac50e45960_0, " ", v0x55ac50e45a00_0, " ", v0x55ac50e45aa0_0, " ", v0x55ac50e45b40_0, " ", v0x55ac50e45be0_0, "\012" {0 0 0};
+    %vpi_call 2 41 "$dumpfile", "dump.vcd" {0 0 0};
+    %vpi_call 2 41 "$dumpvars" {0 0 0};
+    %delay 10, 0;
+    %vpi_call 2 43 "$finish" {0 0 0};
     %end;
     .thread T_1;
 # The file index is used to find the file name in the following table.
