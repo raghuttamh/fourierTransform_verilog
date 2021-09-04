@@ -27,7 +27,7 @@ assign Xi2 = Ai-Bi+Ci-Di;
 assign Xr3 = Ar-Bi-Cr+Di;
 assign Xi3 = Ai+Br-Ci-Dr;
 */
-
+/*
 assign Xr0 = Ar+Cr;
 assign Xi0 = Ai+Ci;
 assign Xr1 = Br-Di;
@@ -36,6 +36,15 @@ assign Xr2 = Ar-Cr;
 assign Xi2 = Ai-Ci;
 assign Xr3 = Br+Di;
 assign Xi3 = Bi-Dr;
+*/
 
+assign Xr0 = Ar+Cr;
+assign Xi0 = Ai+Ci;
+assign Xr1 = Br+Dr;
+assign Xi1 = Bi-Di;
+assign Xr2 = Ar-Cr;
+assign Xi2 = Ai-Ci;
+assign Xr3 = Br-Dr;
+assign Xi3 = Bi-Di;
 
 endmodule
