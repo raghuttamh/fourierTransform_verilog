@@ -27,8 +27,8 @@ module fft8(
 reg[31:0] sin[0:3];
 reg[31:0] cos[0:3];
 initial begin
-	$readmemh("sine.data",sin);
-	$readmemh("cosine.data",cos);
+	$readmemh("hexdata/sine.data",sin);
+	$readmemh("hexdata/cosine.data",cos);
 end
 
 

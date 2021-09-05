@@ -1,4 +1,7 @@
 # Realizing 8-point Fourier Transform
+### Fourth Stage
+The arrangements and connections in previous stages were not working quite well, hence they were restructured to get somewhat working one. The negative values are still in 2's complimented form only. Finding a way to display them in proper format without altering much of the core structure. There are a little confusions in the **hexvalues of sine and cosine** which will be used in Twiddle factor calculations, hopefully they will get resolved soon
+
 ### Third Stage
 The issue with the floating points was resolved. Every values in the system were mulitplied by a factor, here 100, to help eliminating the floating points, instead, the final input is now scaled to 100x and so is the output. The components of the twiddle factor, cos() and sin(), are evaluated by using the values stored in the **.data** files and this can be used to calculate twiddle factor.
 
