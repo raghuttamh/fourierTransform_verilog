@@ -53,7 +53,7 @@ complex_mul s2(Kr7,Ki7,0,32'b11111111111111111111111111111111,Xr7_,Xi7_);
 fft_n4 r1(Xr0_,Xi0_,Xr4_,Xi4_,Xr2_,Xi2_,Xr6_,Xi6_,Tr0,Ti0,Tr4,Ti4,Tr2,Ti2,Tr6,Ti6);
 fft_n4 r2(Xr1_,Xi1_,Xr5_,Xi5_,Xr3_,Xi3_,Xr7_,Xi7_,Lr1,Li1,Lr5,Li5,Lr3,Li3,Lr7,Li7);
 
-complex_mul m4(Lr1,Li1,1,0,Tr1,Ti1);
+complex_mul m4(Lr1,Li1,100,0,Tr1,Ti1);
 complex_mul m5(Lr5,Li5,cos[1],sin[1],Tr5,Ti5);
 complex_mul m6(Lr3,Li3,cos[2],sin[2],Tr3,Ti3);
 complex_mul m7(Lr7,Li7,cos[3],sin[3],Tr7,Ti7);
