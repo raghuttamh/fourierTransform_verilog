@@ -9,12 +9,12 @@ module fft_n4(
 	input [31:0]Dr,
 	input [31:0]Di,
 	output [31:0]Xr0,
-	output [31:0]Xr1,
-	output [31:0]Xr2,
-	output [31:0]Xr3,
 	output [31:0]Xi0,
+	output [31:0]Xr1,
 	output [31:0]Xi1,
+	output [31:0]Xr2,
 	output [31:0]Xi2,
+	output [31:0]Xr3,
 	output [31:0]Xi3);
 
 /*
@@ -28,14 +28,14 @@ assign Xr3 = Ar-Bi-Cr+Di;
 assign Xi3 = Ai+Br-Ci-Dr;
 */
 /*
-assign Xr0 = Ar+Cr;
-assign Xi0 = Ai+Ci;
-assign Xr1 = Br-Di;
-assign Xi1 = Bi+Dr;
-assign Xr2 = Ar-Cr;
-assign Xi2 = Ai-Ci;
-assign Xr3 = Br+Di;
-assign Xi3 = Bi-Dr;
+assign br0 = ar0 + ar2;
+assign br1 = ar1 + ar3;
+assign br2 = ar0 - ar2;
+assign br3 = ar1 - ar3;
+assign br4 = ar4 + ar6;
+assign br5 = ar5 + ar7;
+assign br6 = ar4 - ar6;
+assign br7 = ar5 - ar7;
 */
 
 assign Xr0 = Ar+Cr;

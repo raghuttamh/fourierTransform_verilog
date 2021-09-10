@@ -31,64 +31,67 @@ initial begin
 	$readmemh("hexdata/cosine.data",cos);
 end
 
+wire[31:0] ar0,ar1,ar2,ar3,ar4,ar5,ar6,ar7,ai0,ai1,ai2,ai3,ai4,ai5,ai6,ai7;
+wire[31:0] br0,br1,br2,br3,br4,br5,br6,br7,bi0,bi1,bi2,bi3,bi4,bi5,bi6,bi7;
+wire[31:0] tr0,tr1,tr2,tr3,ti0,ti1,ti2,ti3,tr4,tr5,tr6,tr7,ti4,ti5,ti6,ti7;
+wire[31:0] rr3,ri3,rr7,ri7;
 
-wire[31:0] Xr0_,Xr1_,Xr2_,Xr3_,Xi0_,Xi1_,Xi2_,Xi3_;
-wire[31:0] Xr4_,Xr5_,Xr6_,Xr7_,Xi4_,Xi5_,Xi6_,Xi7_;
-wire[31:0] Kr0,Kr2,Kr3,Kr1,Ki0,Ki1,Ki2,Ki3,Kr7,Ki7,Kr6,Ki6;
-wire[31:0] Lr1,Lr5,Lr3,Lr7,Li1,Li5,Li3,Li7;
-wire[31:0] Tr0,Ti0,Tr1,Ti1,Tr2,Ti2,Tr3,Ti3,Tr4,Ti4,Tr5,Ti5,Tr6,Ti6,Tr7,Ti7;
+assign tr0 = A0 + A4;
+assign tr1 = A1 + A5;
+assign tr2 = A2 + A6;
+assign tr3 = A3 + A7;
+assign tr4 = A0 - A4;
+assign tr5 = A1 - A5;
+assign tr6 = A2 - A6;
+assign tr7 = A3 - A7;
+assign ti0 = 0;
+assign ti1 = 0;
+assign ti2 = 0;
+assign ti3 = 0;
+assign ti4 = 0;
+assign ti5 = 0;
+assign ti6 = 0;
+assign ti7 = 0;
 
-
-fft2 rd1(A0,0,A4,0,Xr0_,Xi0_,Xr4_,Xi4_);
-fft2 rd2(A2,0,A6,0,Xr2_,Xi2_,Kr6,Ki6);
-fft2 rd3(A1,0,A5,0,Xr1_,Xi1_,Xr5_,Xi5_);
-fft2 rd4(A3,0,A7,0,Xr3_,Xi3_,Kr7,Ki7);
-
-//fft2 rd2(A2,0,A6,0,Xr2_,Xi2_,Xr6_,Xi6_);
-//fft2 rd4(A3,0,A7,0,Xr3_,Xi3_,Xr7_,Xi7_);
-complex_mul s1(Kr6,Ki6,0,32'b11111111111111111111111111111111,Xr6_,Xi6_);
-complex_mul s2(Kr7,Ki7,0,32'b11111111111111111111111111111111,Xr7_,Xi7_);
-
-
-fft_n4 r1(Xr0_,Xi0_,Xr4_,Xi4_,Xr2_,Xi2_,Xr6_,Xi6_,Tr0,Ti0,Tr4,Ti4,Tr2,Ti2,Tr6,Ti6);
-fft_n4 r2(Xr1_,Xi1_,Xr5_,Xi5_,Xr3_,Xi3_,Xr7_,Xi7_,Lr1,Li1,Lr5,Li5,Lr3,Li3,Lr7,Li7);
-
-complex_mul m4(Lr1,Li1,100,0,Tr1,Ti1);
-complex_mul m5(Lr5,Li5,cos[1],sin[1],Tr5,Ti5);
-complex_mul m6(Lr3,Li3,cos[2],sin[2],Tr3,Ti3);
-complex_mul m7(Lr7,Li7,cos[3],sin[3],Tr7,Ti7);
-
-assign Xr0 = Tr0 + Tr1;
-assign Xi0 = Ti0 + Ti1;
-assign Xr1 = Tr4 + Tr5;
-assign Xi1 = Ti4 + Ti5;
-assign Xr2 = Tr2 + Tr3;
-assign Xi2 = Ti2 + Ti3;
-assign Xr3 = Tr6 + Tr7;
-assign Xi3 = Ti6 + Ti7;
-assign Xr4 = Tr0 - Tr1;
-assign Xi4 = Ti0 - Ti1;
-assign Xr5 = Tr4 - Tr5;
-assign Xi5 = Ti4 - Ti5;
-assign Xr6 = Tr2 - Tr3;
-assign Xi6 = Ti2 - Ti3;
-assign Xr7 = Tr6 - Tr7;
-assign Xi7 = Ti6 - Ti7;
+complex_mul m0(tr0,ti0,cos[0],sin[0],ar0,ai0);
+complex_mul m1(tr1,ti1,cos[0],sin[0],ar1,ai1);
+complex_mul m2(tr2,ti2,cos[0],sin[0],ar2,ai2);
+complex_mul m3(tr3,ti3,cos[0],sin[0],ar3,ai3);
+complex_mul m4(tr4,ti4,cos[0],sin[0],ar4,ai4);
+complex_mul m5(tr5,ti5,cos[1],sin[1],ar5,ai5);
+complex_mul m6(tr6,ti6,cos[2],sin[2],ar6,ai6);
+complex_mul m7(tr7,ti7,cos[3],sin[3],ar7,ai7);
 
 
-//Below is one way of computing that didnt work out well
-/*fft_n4 radix1(A0,A2,A4,A6,Xr0_,Xr1_,Xr2_,Xr3_,Xi0_,Xi1_,Xi2_,Xi3_);
-fft_n4 radix2(A1,A3,A5,A7,Lr4,Lr5,Lr6,Lr7,Li4,Li5,Li6,Li7);
+fft_n4 ff1(ar0,ai0,ar1,ai1,ar2,ai2,ar3,ai3,br0,bi0,br1,bi1,br2,bi2,br3,bi3);
+fft_n4 ff2(ar4,ai4,ar5,ai5,ar6,ai6,ar7,ai7,br4,bi4,br5,bi5,br6,bi6,br7,bi7);
 
-complex_mul m4(Lr4,Li4,cos[0],sin[0],Xr4_,Xi4_);
-complex_mul m5(Lr5,Li5,cos[1],sin[1],Xr5_,Xi5_);
-complex_mul m6(Lr6,Li6,cos[2],sin[2],Xr6_,Xi6_);
-complex_mul m7(Lr7,Li7,cos[3],sin[3],Xr7_,Xi7_);
-
-fft2 rd1(Xr0_,Xi0_,Xr4_,Xi4_,Xr0,Xi0,Xr4,Xi4);
-fft2 rd2(Xr1_,Xi1_,Xr5_,Xi5_,Xr1,Xi1,Xr5,Xi5);
-fft2 rd3(Xr2_,Xi2_,Xr6_,Xi6_,Xr2,Xi2,Xr6,Xi6);
-fft2 rd4(Xr3_,Xi3_,Xr7_,Xi7_,Xr3,Xi3,Xr7,Xi7);
+/*
+assign br0 = ar0 + ar2;
+assign br1 = ar1 + ar3;
+assign br2 = ar0 - ar2;
+assign br3 = ar1 - ar3;
+assign br4 = ar4 + ar6;
+assign br5 = ar5 + ar7;
+assign br6 = ar4 - ar6;
+assign br7 = ar5 - ar7;
+assign bi0 = ai0 + ai2;
+assign bi1 = ai1 + ai3;
+assign bi2 = ai0 - ai2;
+assign bi3 = ai1 - ai3;
+assign bi4 = ai4 + ai6;
+assign bi5 = ai5 + ai7;
+assign bi6 = ai4 - ai6;
+assign bi7 = ai5 - ai7;
 */
+complex_mul n1(br3,bi3,0,32'b11111111111111111111111111111111,rr3,ri3);
+complex_mul n2(br7,bi7,0,32'b11111111111111111111111111111111,rr7,ri7);
+
+fft2 f1(br0,bi0,br1,bi1,Xr0,Xi0,Xr4,Xi4);
+fft2 f2(br2,bi2,rr3,ri3,Xr2,Xi2,Xr6,Xi6);
+fft2 f3(br4,bi4,br5,bi5,Xr1,Xi1,Xr5,Xi5);
+fft2 f4(br6,bi6,rr7,ri7,Xr3,Xi3,Xr7,Xi7);
+
+
 endmodule
 

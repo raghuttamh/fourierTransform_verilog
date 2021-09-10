@@ -1,5 +1,5 @@
 $date
-	Sun Sep  5 11:44:41 2021
+	Fri Sep 10 14:42:51 2021
 $end
 $version
 	Icarus Verilog
@@ -41,117 +41,115 @@ $var wire 32 = A4 [31:0] $end
 $var wire 32 > A5 [31:0] $end
 $var wire 32 ? A6 [31:0] $end
 $var wire 32 @ A7 [31:0] $end
-$var wire 32 A Xr7_ [31:0] $end
-$var wire 32 B Xr7 [31:0] $end
-$var wire 32 C Xr6_ [31:0] $end
-$var wire 32 D Xr6 [31:0] $end
-$var wire 32 E Xr5_ [31:0] $end
-$var wire 32 F Xr5 [31:0] $end
-$var wire 32 G Xr4_ [31:0] $end
-$var wire 32 H Xr4 [31:0] $end
-$var wire 32 I Xr3_ [31:0] $end
-$var wire 32 J Xr3 [31:0] $end
-$var wire 32 K Xr2_ [31:0] $end
-$var wire 32 L Xr2 [31:0] $end
-$var wire 32 M Xr1_ [31:0] $end
-$var wire 32 N Xr1 [31:0] $end
-$var wire 32 O Xr0_ [31:0] $end
-$var wire 32 P Xr0 [31:0] $end
-$var wire 32 Q Xi7_ [31:0] $end
-$var wire 32 R Xi7 [31:0] $end
-$var wire 32 S Xi6_ [31:0] $end
-$var wire 32 T Xi6 [31:0] $end
-$var wire 32 U Xi5_ [31:0] $end
-$var wire 32 V Xi5 [31:0] $end
-$var wire 32 W Xi4_ [31:0] $end
-$var wire 32 X Xi4 [31:0] $end
-$var wire 32 Y Xi3_ [31:0] $end
-$var wire 32 Z Xi3 [31:0] $end
-$var wire 32 [ Xi2_ [31:0] $end
-$var wire 32 \ Xi2 [31:0] $end
-$var wire 32 ] Xi1_ [31:0] $end
-$var wire 32 ^ Xi1 [31:0] $end
-$var wire 32 _ Xi0_ [31:0] $end
-$var wire 32 ` Xi0 [31:0] $end
-$var wire 32 a Tr7 [31:0] $end
-$var wire 32 b Tr6 [31:0] $end
-$var wire 32 c Tr5 [31:0] $end
-$var wire 32 d Tr4 [31:0] $end
-$var wire 32 e Tr3 [31:0] $end
-$var wire 32 f Tr2 [31:0] $end
-$var wire 32 g Tr1 [31:0] $end
-$var wire 32 h Tr0 [31:0] $end
-$var wire 32 i Ti7 [31:0] $end
-$var wire 32 j Ti6 [31:0] $end
-$var wire 32 k Ti5 [31:0] $end
-$var wire 32 l Ti4 [31:0] $end
-$var wire 32 m Ti3 [31:0] $end
-$var wire 32 n Ti2 [31:0] $end
-$var wire 32 o Ti1 [31:0] $end
-$var wire 32 p Ti0 [31:0] $end
-$var wire 32 q Lr7 [31:0] $end
-$var wire 32 r Lr5 [31:0] $end
-$var wire 32 s Lr3 [31:0] $end
-$var wire 32 t Lr1 [31:0] $end
-$var wire 32 u Li7 [31:0] $end
-$var wire 32 v Li5 [31:0] $end
-$var wire 32 w Li3 [31:0] $end
-$var wire 32 x Li1 [31:0] $end
-$var wire 32 y Kr7 [31:0] $end
-$var wire 32 z Kr6 [31:0] $end
-$var wire 32 { Ki7 [31:0] $end
-$var wire 32 | Ki6 [31:0] $end
-$scope module m4 $end
-$var wire 32 } Yi [31:0] $end
-$var wire 32 ~ Yr [31:0] $end
-$var wire 32 !" Xr [31:0] $end
-$var wire 32 "" Xi [31:0] $end
-$var wire 32 #" Pr [31:0] $end
-$var wire 32 $" Pi [31:0] $end
-$upscope $end
-$scope module m5 $end
-$var wire 32 %" Yi [31:0] $end
-$var wire 32 &" Yr [31:0] $end
-$var wire 32 '" Xr [31:0] $end
-$var wire 32 (" Xi [31:0] $end
-$var wire 32 )" Pr [31:0] $end
-$var wire 32 *" Pi [31:0] $end
-$upscope $end
-$scope module m6 $end
-$var wire 32 +" Yi [31:0] $end
-$var wire 32 ," Yr [31:0] $end
+$var wire 32 A ti0 [31:0] $end
+$var wire 32 B ti1 [31:0] $end
+$var wire 32 C ti2 [31:0] $end
+$var wire 32 D ti3 [31:0] $end
+$var wire 32 E ti4 [31:0] $end
+$var wire 32 F ti5 [31:0] $end
+$var wire 32 G ti6 [31:0] $end
+$var wire 32 H ti7 [31:0] $end
+$var wire 32 I tr7 [31:0] $end
+$var wire 32 J tr6 [31:0] $end
+$var wire 32 K tr5 [31:0] $end
+$var wire 32 L tr4 [31:0] $end
+$var wire 32 M tr3 [31:0] $end
+$var wire 32 N tr2 [31:0] $end
+$var wire 32 O tr1 [31:0] $end
+$var wire 32 P tr0 [31:0] $end
+$var wire 32 Q rr7 [31:0] $end
+$var wire 32 R rr3 [31:0] $end
+$var wire 32 S ri7 [31:0] $end
+$var wire 32 T ri3 [31:0] $end
+$var wire 32 U br7 [31:0] $end
+$var wire 32 V br6 [31:0] $end
+$var wire 32 W br5 [31:0] $end
+$var wire 32 X br4 [31:0] $end
+$var wire 32 Y br3 [31:0] $end
+$var wire 32 Z br2 [31:0] $end
+$var wire 32 [ br1 [31:0] $end
+$var wire 32 \ br0 [31:0] $end
+$var wire 32 ] bi7 [31:0] $end
+$var wire 32 ^ bi6 [31:0] $end
+$var wire 32 _ bi5 [31:0] $end
+$var wire 32 ` bi4 [31:0] $end
+$var wire 32 a bi3 [31:0] $end
+$var wire 32 b bi2 [31:0] $end
+$var wire 32 c bi1 [31:0] $end
+$var wire 32 d bi0 [31:0] $end
+$var wire 32 e ar7 [31:0] $end
+$var wire 32 f ar6 [31:0] $end
+$var wire 32 g ar5 [31:0] $end
+$var wire 32 h ar4 [31:0] $end
+$var wire 32 i ar3 [31:0] $end
+$var wire 32 j ar2 [31:0] $end
+$var wire 32 k ar1 [31:0] $end
+$var wire 32 l ar0 [31:0] $end
+$var wire 32 m ai7 [31:0] $end
+$var wire 32 n ai6 [31:0] $end
+$var wire 32 o ai5 [31:0] $end
+$var wire 32 p ai4 [31:0] $end
+$var wire 32 q ai3 [31:0] $end
+$var wire 32 r ai2 [31:0] $end
+$var wire 32 s ai1 [31:0] $end
+$var wire 32 t ai0 [31:0] $end
+$var wire 32 u Xr7 [31:0] $end
+$var wire 32 v Xr6 [31:0] $end
+$var wire 32 w Xr5 [31:0] $end
+$var wire 32 x Xr4 [31:0] $end
+$var wire 32 y Xr3 [31:0] $end
+$var wire 32 z Xr2 [31:0] $end
+$var wire 32 { Xr1 [31:0] $end
+$var wire 32 | Xr0 [31:0] $end
+$var wire 32 } Xi7 [31:0] $end
+$var wire 32 ~ Xi6 [31:0] $end
+$var wire 32 !" Xi5 [31:0] $end
+$var wire 32 "" Xi4 [31:0] $end
+$var wire 32 #" Xi3 [31:0] $end
+$var wire 32 $" Xi2 [31:0] $end
+$var wire 32 %" Xi1 [31:0] $end
+$var wire 32 &" Xi0 [31:0] $end
+$scope module f1 $end
+$var wire 32 '" yr [31:0] $end
+$var wire 32 (" yi [31:0] $end
+$var wire 32 )" xr [31:0] $end
+$var wire 32 *" xi [31:0] $end
+$var wire 32 +" Yr [31:0] $end
+$var wire 32 ," Yi [31:0] $end
 $var wire 32 -" Xr [31:0] $end
 $var wire 32 ." Xi [31:0] $end
-$var wire 32 /" Pr [31:0] $end
-$var wire 32 0" Pi [31:0] $end
 $upscope $end
-$scope module m7 $end
-$var wire 32 1" Yi [31:0] $end
-$var wire 32 2" Yr [31:0] $end
-$var wire 32 3" Xr [31:0] $end
-$var wire 32 4" Xi [31:0] $end
-$var wire 32 5" Pr [31:0] $end
-$var wire 32 6" Pi [31:0] $end
+$scope module f2 $end
+$var wire 32 /" yr [31:0] $end
+$var wire 32 0" yi [31:0] $end
+$var wire 32 1" xr [31:0] $end
+$var wire 32 2" xi [31:0] $end
+$var wire 32 3" Yr [31:0] $end
+$var wire 32 4" Yi [31:0] $end
+$var wire 32 5" Xr [31:0] $end
+$var wire 32 6" Xi [31:0] $end
 $upscope $end
-$scope module r1 $end
-$var wire 32 7" Xr3 [31:0] $end
-$var wire 32 8" Xr2 [31:0] $end
-$var wire 32 9" Xr1 [31:0] $end
-$var wire 32 :" Xr0 [31:0] $end
-$var wire 32 ;" Xi3 [31:0] $end
-$var wire 32 <" Xi2 [31:0] $end
-$var wire 32 =" Xi1 [31:0] $end
-$var wire 32 >" Xi0 [31:0] $end
-$var wire 32 ?" Dr [31:0] $end
-$var wire 32 @" Di [31:0] $end
-$var wire 32 A" Cr [31:0] $end
-$var wire 32 B" Ci [31:0] $end
-$var wire 32 C" Br [31:0] $end
-$var wire 32 D" Bi [31:0] $end
-$var wire 32 E" Ar [31:0] $end
-$var wire 32 F" Ai [31:0] $end
+$scope module f3 $end
+$var wire 32 7" yr [31:0] $end
+$var wire 32 8" yi [31:0] $end
+$var wire 32 9" xr [31:0] $end
+$var wire 32 :" xi [31:0] $end
+$var wire 32 ;" Yr [31:0] $end
+$var wire 32 <" Yi [31:0] $end
+$var wire 32 =" Xr [31:0] $end
+$var wire 32 >" Xi [31:0] $end
 $upscope $end
-$scope module r2 $end
+$scope module f4 $end
+$var wire 32 ?" yr [31:0] $end
+$var wire 32 @" yi [31:0] $end
+$var wire 32 A" xr [31:0] $end
+$var wire 32 B" xi [31:0] $end
+$var wire 32 C" Yr [31:0] $end
+$var wire 32 D" Yi [31:0] $end
+$var wire 32 E" Xr [31:0] $end
+$var wire 32 F" Xi [31:0] $end
+$upscope $end
+$scope module ff1 $end
 $var wire 32 G" Xr3 [31:0] $end
 $var wire 32 H" Xr2 [31:0] $end
 $var wire 32 I" Xr1 [31:0] $end
@@ -169,258 +167,332 @@ $var wire 32 T" Bi [31:0] $end
 $var wire 32 U" Ar [31:0] $end
 $var wire 32 V" Ai [31:0] $end
 $upscope $end
-$scope module rd1 $end
-$var wire 32 W" xi [31:0] $end
-$var wire 32 X" xr [31:0] $end
-$var wire 32 Y" yi [31:0] $end
-$var wire 32 Z" yr [31:0] $end
-$var wire 32 [" Yr [31:0] $end
-$var wire 32 \" Yi [31:0] $end
-$var wire 32 ]" Xr [31:0] $end
-$var wire 32 ^" Xi [31:0] $end
+$scope module ff2 $end
+$var wire 32 W" Xr3 [31:0] $end
+$var wire 32 X" Xr2 [31:0] $end
+$var wire 32 Y" Xr1 [31:0] $end
+$var wire 32 Z" Xr0 [31:0] $end
+$var wire 32 [" Xi3 [31:0] $end
+$var wire 32 \" Xi2 [31:0] $end
+$var wire 32 ]" Xi1 [31:0] $end
+$var wire 32 ^" Xi0 [31:0] $end
+$var wire 32 _" Dr [31:0] $end
+$var wire 32 `" Di [31:0] $end
+$var wire 32 a" Cr [31:0] $end
+$var wire 32 b" Ci [31:0] $end
+$var wire 32 c" Br [31:0] $end
+$var wire 32 d" Bi [31:0] $end
+$var wire 32 e" Ar [31:0] $end
+$var wire 32 f" Ai [31:0] $end
 $upscope $end
-$scope module rd2 $end
-$var wire 32 _" xi [31:0] $end
-$var wire 32 `" xr [31:0] $end
-$var wire 32 a" yi [31:0] $end
-$var wire 32 b" yr [31:0] $end
-$var wire 32 c" Yr [31:0] $end
-$var wire 32 d" Yi [31:0] $end
-$var wire 32 e" Xr [31:0] $end
-$var wire 32 f" Xi [31:0] $end
+$scope module m0 $end
+$var wire 32 g" Xi [31:0] $end
+$var wire 32 h" Xr [31:0] $end
+$var wire 32 i" Yi [31:0] $end
+$var wire 32 j" Yr [31:0] $end
+$var wire 32 k" Pr [31:0] $end
+$var wire 32 l" Pi [31:0] $end
 $upscope $end
-$scope module rd3 $end
-$var wire 32 g" xi [31:0] $end
-$var wire 32 h" xr [31:0] $end
-$var wire 32 i" yi [31:0] $end
-$var wire 32 j" yr [31:0] $end
-$var wire 32 k" Yr [31:0] $end
-$var wire 32 l" Yi [31:0] $end
-$var wire 32 m" Xr [31:0] $end
-$var wire 32 n" Xi [31:0] $end
+$scope module m1 $end
+$var wire 32 m" Xi [31:0] $end
+$var wire 32 n" Xr [31:0] $end
+$var wire 32 o" Yi [31:0] $end
+$var wire 32 p" Yr [31:0] $end
+$var wire 32 q" Pr [31:0] $end
+$var wire 32 r" Pi [31:0] $end
 $upscope $end
-$scope module rd4 $end
-$var wire 32 o" xi [31:0] $end
-$var wire 32 p" xr [31:0] $end
-$var wire 32 q" yi [31:0] $end
-$var wire 32 r" yr [31:0] $end
-$var wire 32 s" Yr [31:0] $end
-$var wire 32 t" Yi [31:0] $end
-$var wire 32 u" Xr [31:0] $end
-$var wire 32 v" Xi [31:0] $end
+$scope module m2 $end
+$var wire 32 s" Xi [31:0] $end
+$var wire 32 t" Xr [31:0] $end
+$var wire 32 u" Yi [31:0] $end
+$var wire 32 v" Yr [31:0] $end
+$var wire 32 w" Pr [31:0] $end
+$var wire 32 x" Pi [31:0] $end
 $upscope $end
-$scope module s1 $end
-$var wire 32 w" Xi [31:0] $end
-$var wire 32 x" Xr [31:0] $end
-$var wire 32 y" Yi [31:0] $end
-$var wire 32 z" Yr [31:0] $end
-$var wire 32 {" Pr [31:0] $end
-$var wire 32 |" Pi [31:0] $end
+$scope module m3 $end
+$var wire 32 y" Xi [31:0] $end
+$var wire 32 z" Xr [31:0] $end
+$var wire 32 {" Yi [31:0] $end
+$var wire 32 |" Yr [31:0] $end
+$var wire 32 }" Pr [31:0] $end
+$var wire 32 ~" Pi [31:0] $end
 $upscope $end
-$scope module s2 $end
-$var wire 32 }" Xi [31:0] $end
-$var wire 32 ~" Xr [31:0] $end
-$var wire 32 !# Yi [31:0] $end
-$var wire 32 "# Yr [31:0] $end
-$var wire 32 ## Pr [31:0] $end
-$var wire 32 $# Pi [31:0] $end
+$scope module m4 $end
+$var wire 32 !# Xi [31:0] $end
+$var wire 32 "# Xr [31:0] $end
+$var wire 32 ## Yi [31:0] $end
+$var wire 32 $# Yr [31:0] $end
+$var wire 32 %# Pr [31:0] $end
+$var wire 32 &# Pi [31:0] $end
+$upscope $end
+$scope module m5 $end
+$var wire 32 '# Xi [31:0] $end
+$var wire 32 (# Xr [31:0] $end
+$var wire 32 )# Yi [31:0] $end
+$var wire 32 *# Yr [31:0] $end
+$var wire 32 +# Pr [31:0] $end
+$var wire 32 ,# Pi [31:0] $end
+$upscope $end
+$scope module m6 $end
+$var wire 32 -# Xi [31:0] $end
+$var wire 32 .# Xr [31:0] $end
+$var wire 32 /# Yi [31:0] $end
+$var wire 32 0# Yr [31:0] $end
+$var wire 32 1# Pr [31:0] $end
+$var wire 32 2# Pi [31:0] $end
+$upscope $end
+$scope module m7 $end
+$var wire 32 3# Xi [31:0] $end
+$var wire 32 4# Xr [31:0] $end
+$var wire 32 5# Yi [31:0] $end
+$var wire 32 6# Yr [31:0] $end
+$var wire 32 7# Pr [31:0] $end
+$var wire 32 8# Pi [31:0] $end
+$upscope $end
+$scope module n1 $end
+$var wire 32 9# Xi [31:0] $end
+$var wire 32 :# Xr [31:0] $end
+$var wire 32 ;# Yi [31:0] $end
+$var wire 32 <# Yr [31:0] $end
+$var wire 32 =# Pr [31:0] $end
+$var wire 32 ># Pi [31:0] $end
+$upscope $end
+$scope module n2 $end
+$var wire 32 ?# Xi [31:0] $end
+$var wire 32 @# Xr [31:0] $end
+$var wire 32 A# Yi [31:0] $end
+$var wire 32 B# Yr [31:0] $end
+$var wire 32 C# Pr [31:0] $end
+$var wire 32 D# Pi [31:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #10
 $dumpvars
-b11111111111111111111111110011111 $#
+b11111111111111111111111110111001 D#
+b1000111 C#
+b0 B#
+b11111111111111111111111111111111 A#
+b1000111 @#
+b1000111 ?#
+b1100100 >#
+b0 =#
+b0 <#
+b11111111111111111111111111111111 ;#
+b11111111111111111111111110011100 :#
+b0 9#
+b11111111111111111111111110111001 8#
+b11111111111111111111111110111001 7#
+b11111111111111111111111110111001 6#
+b11111111111111111111111110111001 5#
+b1 4#
+b0 3#
+b0 2#
+b0 1#
+b0 0#
+b11111111111111111111111110011100 /#
+b0 .#
+b0 -#
+b0 ,#
+b0 +#
+b1000110 *#
+b11111111111111111111111110111001 )#
+b0 (#
+b0 '#
+b0 &#
+b0 %#
+b1100100 $#
 b0 ##
 b0 "#
-b11111111111111111111111111111111 !#
-b1100001 ~"
-b0 }"
-b11111111111111111111111111011101 |"
+b0 !#
+b0 ~"
+b1100100 }"
+b1100100 |"
 b0 {"
-b0 z"
-b11111111111111111111111111111111 y"
-b100011 x"
+b1 z"
+b0 y"
+b0 x"
 b0 w"
-b0 v"
-b1100001 u"
+b1100100 v"
+b0 u"
 b0 t"
-b1100001 s"
+b0 s"
 b0 r"
 b0 q"
-b1100001 p"
+b1100100 p"
 b0 o"
 b0 n"
-b1111001 m"
+b0 m"
 b0 l"
-b11111111111111111111111111011101 k"
-b1001110 j"
+b0 k"
+b1100100 j"
 b0 i"
-b101011 h"
+b0 h"
 b0 g"
 b0 f"
-b1111001 e"
+b0 e"
 b0 d"
-b100011 c"
-b101011 b"
+b0 c"
+b0 b"
 b0 a"
-b1001110 `"
-b0 _"
+b11111111111111111111111110111001 `"
+b11111111111111111111111110111001 _"
 b0 ^"
-b1100001 ]"
+b11111111111111111111111110111001 ]"
 b0 \"
-b11111111111111111111111110011111 ["
-b1100001 Z"
-b0 Y"
+b1000111 ["
+b0 Z"
+b11111111111111111111111110111001 Y"
 b0 X"
-b0 W"
+b1000111 W"
 b0 V"
-b1111001 U"
+b0 U"
 b0 T"
-b11111111111111111111111111011101 S"
+b0 S"
 b0 R"
-b1100001 Q"
-b11111111111111111111111110011111 P"
-b0 O"
+b0 Q"
+b0 P"
+b1100100 O"
 b0 N"
-b1100001 M"
+b0 M"
 b0 L"
-b1100001 K"
-b11011010 J"
-b11111111111111111111111111011101 I"
-b11000 H"
-b11111111111111111111111111011101 G"
-b0 F"
-b1100001 E"
-b0 D"
-b11111111111111111111111110011111 C"
+b0 K"
+b0 J"
+b1100100 I"
+b0 H"
+b11111111111111111111111110011100 G"
+b11111111111111111111111110111001 F"
+b1000111 E"
+b1000111 D"
+b11111111111111111111111110111001 C"
 b0 B"
-b1111001 A"
-b11111111111111111111111111011101 @"
-b0 ?"
-b0 >"
-b100011 ="
-b0 <"
-b100011 ;"
-b11011010 :"
-b11111111111111111111111110011111 9"
-b11111111111111111111111111101000 8"
-b11111111111111111111111110011111 7"
-b11111111111111111110010100011001 6"
-b1101011100111 5"
-b1100001 4"
+b0 A"
+b11111111111111111111111110111001 @"
+b1000111 ?"
+b11111111111111111111111110111001 >"
+b11111111111111111111111110111001 ="
+b1000111 <"
+b1000111 ;"
+b0 :"
+b0 9"
+b11111111111111111111111110111001 8"
+b11111111111111111111111110111001 7"
+b1100100 6"
+b0 5"
+b11111111111111111111111110011100 4"
 b0 3"
-b11111111111111111111111110111001 2"
-b11111111111111111111111110111001 1"
-b0 0"
-b10011001000101 /"
-b1100001 ."
-b0 -"
+b0 2"
+b0 1"
+b1100100 0"
+b0 /"
+b0 ."
+b1100100 -"
 b0 ,"
-b11111111111111111111111110011011 +"
-b1100001101 *"
-b11111111111111111110111110100011 )"
-b11111111111111111111111111011101 ("
-b11000 '"
-b11111111111111111111111110111001 &"
+b11111111111111111111111110011100 +"
+b0 *"
+b0 )"
+b0 ("
+b1100100 '"
+b0 &"
 b11111111111111111111111110111001 %"
-b11111111111111111111111111011101 $"
-b11011010 #"
-b11111111111111111111111111011101 ""
-b11011010 !"
-b1 ~
-b0 }
-b0 |
-b0 {
-b100011 z
-b1100001 y
-b11111111111111111111111111011101 x
-b1100001 w
-b11111111111111111111111111011101 v
-b1100001 u
-b11011010 t
+b1100100 $"
+b11111111111111111111111110111001 #"
+b0 ""
+b1000111 !"
+b11111111111111111111111110011100 ~
+b1000111 }
+b1100100 |
+b11111111111111111111111110111001 {
+b0 z
+b1000111 y
+b11111111111111111111111110011100 x
+b1000111 w
+b0 v
+b11111111111111111111111110111001 u
+b0 t
 b0 s
-b11000 r
+b0 r
 b0 q
-b11111111111111111111111110011111 p
-b11111111111111111111111111011101 o
-b100011 n
-b0 m
-b11111111111111111111111110011111 l
-b1100001101 k
-b100011 j
-b11111111111111111110010100011001 i
-b11011010 h
-b11011010 g
+b0 p
+b0 o
+b0 n
+b11111111111111111111111110111001 m
+b0 l
+b0 k
+b0 j
+b1100100 i
+b0 h
+b0 g
 b0 f
-b10011001000101 e
-b11111111111111111111111111101000 d
-b11111111111111111110111110100011 c
+b11111111111111111111111110111001 e
+b0 d
+b0 c
 b0 b
-b1101011100111 a
-b11111111111111111111111101111100 `
-b0 _
-b1010101100 ^
-b0 ]
-b100011 \
-b0 [
-b11111111111111111110010100111100 Z
-b0 Y
-b11111111111111111111111111000010 X
-b0 W
-b11111111111111111111110010010010 V
-b0 U
-b100011 T
-b11111111111111111111111111011101 S
-b1101100001010 R
-b11111111111111111111111110011111 Q
-b110110100 P
-b1100001 O
-b11111111111111111110111110001011 N
-b1111001 M
-b10011001000101 L
-b1111001 K
-b1101011100111 J
-b1100001 I
+b0 a
+b0 `
+b11111111111111111111111110111001 _
+b0 ^
+b1000111 ]
+b0 \
+b1100100 [
+b0 Z
+b11111111111111111111111110011100 Y
+b0 X
+b11111111111111111111111110111001 W
+b0 V
+b1000111 U
+b1100100 T
+b11111111111111111111111110111001 S
+b0 R
+b1000111 Q
+b0 P
+b0 O
+b0 N
+b1 M
+b0 L
+b0 K
+b0 J
+b1 I
 b0 H
-b11111111111111111111111110011111 G
-b1000001000101 F
-b11111111111111111111111111011101 E
-b11111111111111111101100110111011 D
+b0 G
+b0 F
+b0 E
+b0 D
 b0 C
-b11111111111111111110010100011001 B
+b0 B
 b0 A
 b0 @
-b101011 ?
-b1001110 >
-b1100001 =
-b1100001 <
-b1001110 ;
-b101011 :
+b0 ?
+b0 >
+b0 =
+b1 <
+b0 ;
+b0 :
 b0 9
 b0 8
-b101011 7
-b1001110 6
-b1100001 5
-b1100001 4
-b1001110 3
-b101011 2
+b0 7
+b0 6
+b0 5
+b1 4
+b0 3
+b0 2
 b0 1
-b11111111111111111111111101111100 0
-b1010101100 /
-b100011 .
-b11111111111111111110010100111100 -
-b11111111111111111111111111000010 ,
-b11111111111111111111110010010010 +
-b100011 *
-b1101100001010 )
-b110110100 (
-b11111111111111111110111110001011 '
-b10011001000101 &
-b1101011100111 %
-b0 $
-b1000001000101 #
-b11111111111111111101100110111011 "
-b11111111111111111110010100011001 !
+b0 0
+b11111111111111111111111110111001 /
+b1100100 .
+b11111111111111111111111110111001 -
+b0 ,
+b1000111 +
+b11111111111111111111111110011100 *
+b1000111 )
+b1100100 (
+b11111111111111111111111110111001 '
+b0 &
+b1000111 %
+b11111111111111111111111110011100 $
+b1000111 #
+b0 "
+b11111111111111111111111110111001 !
 $end
 #20
