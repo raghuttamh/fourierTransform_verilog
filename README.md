@@ -1,4 +1,8 @@
 # Realizing 8-point Fourier Transform
+### Sixth Stage
+As we know, in practice we can obtain only one sample at a time, we make use of a shift register kindoff block, that takes in only a single point 32-bit data, and stores it, whenever a new data sample is obtained, every point shifts their position and given to FFT block to do the calculation. The whole system now only a single point one after the other and provides output of 32-bit 8 points, real and imaginary each. The block diagram of the system is shown below. <br>
+![System Block](simulated_examples/Complete_BlockDiagram.png)<br>
+
 ### Fifth Stage
 The Butterfly was rearranged and connected back again, as shown in the diagram below<br>
 ![Butterfly](simulated_examples/FFT_8_BlockDiagram.jpg)<br>
