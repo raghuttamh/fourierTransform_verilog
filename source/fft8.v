@@ -24,17 +24,17 @@ module fft8(
 	output [31:0]Xi6,
 	output [31:0]Xi7);
 
-reg[31:0] sin[0:3];
-reg[31:0] cos[0:3];
+reg [31:0] sin[0:3];
+reg [31:0] cos[0:3];
 initial begin
-	$readmemh("hexdata/sine.data",sin);
-	$readmemh("hexdata/cosine.data",cos);
+	$readmemh("hexdata/sine.txt",sin);
+	$readmemh("hexdata/cosine.txt",cos);
 end
 
-wire[31:0] ar0,ar1,ar2,ar3,ar4,ar5,ar6,ar7,ai0,ai1,ai2,ai3,ai4,ai5,ai6,ai7;
-wire[31:0] br0,br1,br2,br3,br4,br5,br6,br7,bi0,bi1,bi2,bi3,bi4,bi5,bi6,bi7;
-wire[31:0] tr0,tr1,tr2,tr3,ti0,ti1,ti2,ti3,tr4,tr5,tr6,tr7,ti4,ti5,ti6,ti7;
-wire[31:0] rr3,ri3,rr7,ri7;
+wire [31:0] ar0,ar1,ar2,ar3,ar4,ar5,ar6,ar7,ai0,ai1,ai2,ai3,ai4,ai5,ai6,ai7;
+wire [31:0] br0,br1,br2,br3,br4,br5,br6,br7,bi0,bi1,bi2,bi3,bi4,bi5,bi6,bi7;
+wire [31:0] tr0,tr1,tr2,tr3,ti0,ti1,ti2,ti3,tr4,tr5,tr6,tr7,ti4,ti5,ti6,ti7;
+wire [31:0] rr3,ri3,rr7,ri7;
 
 assign tr0 = A0 + A4;
 assign tr1 = A1 + A5;
